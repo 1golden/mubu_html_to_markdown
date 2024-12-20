@@ -10,6 +10,11 @@
 python mubu_converter.py <html_file_path> <output_file_path>
 ```
 
+例如
+```sh
+python mubu_converter.py source.html output.md
+```
+
 ## 注意事项
 
 - 目前只支持导出单个文件，不支持批量导出
