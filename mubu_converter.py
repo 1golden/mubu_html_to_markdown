@@ -40,8 +40,8 @@ class MubuConverter:
             highlight_tag.insert_before("<mark>") 
             highlight_tag.insert_after("</mark>")   
         for underline_tag in soup.find_all(class_='underline'):
-            underline_tag.insert_before("++")  
-            underline_tag.insert_after("++")    
+            underline_tag.insert_before("<u>")  
+            underline_tag.insert_after("</u>")    
 
         # 将class为“text-color-XX”的<span>标签转为md的颜色标签
         for color_tag in soup.find_all('span', class_=lambda x: x and x.startswith('text-color-')):

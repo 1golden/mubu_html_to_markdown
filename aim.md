@@ -155,7 +155,7 @@
   - 以 λ多项式 为元素的矩阵称为λ矩阵，记为`A(λ)`
     - <mark>$A(λ)=[a_{ij}(λ)]_{m×n}$</mark>
 - <font color=bold>λ矩阵的秩</font>
-  - 矩阵A(λ)中++非零子式的最高阶数r++ 定义为A(λ)的秩，记为`rank(A(λ))=r`
+  - 矩阵A(λ)中<u>非零子式的最高阶数r</u> 定义为A(λ)的秩，记为`rank(A(λ))=r`
   - 例子
     - ![](https://api2.mubu.com/v3/document_image/21954114_81336d7f-e5a5-482e-b7fb-c838996a23b9.png)
 - <font color=bold>λ矩阵相抵</font>
@@ -167,7 +167,7 @@
     - 相抵的λ矩阵具有相同的秩和相同的各阶行列式因子
     - λ矩阵A(λ)与B(λ)相抵 的<mark>充要条件</mark>
       - or 完全一致的<font color=green>不变因子</font>
-      - or 具有++相同的各阶行列式因子++
+      - or 具有<u>相同的各阶行列式因子</u>
       - or 完全一致的<font color=green>初等因子</font>，且 <font color=green>$rank\big (A(λ)\big)=rank\big(B(λ)\big)$</font>
     - 复方阵A和B相似当且仅当它们的特征矩阵相抵
       - - ![](https://api2.mubu.com/v3/document_image/21954114_f94dc556-0da1-4575-f465-23e777e6293a.png)
@@ -176,7 +176,7 @@
     - ![](https://api2.mubu.com/v3/document_image/21954114_b9e865ad-43ac-4bd5-8818-6bd1f56e1db2.png)
 - <font color=bold>λ矩阵的逆矩阵</font>
   - 设 $A(λ)$ 是 $n$ 阶 $λ$ 方阵，若存在 $n$ 阶$λ$方阵$B(λ)$满足<font color=red>$A(λ)B(λ)=B(λ)A(λ)=I$</font> 则称λ矩阵A(λ)是可逆的,并称B(λ)为A(λ)的逆矩阵,记作$A(λ)^{−1}$
-  - λ方阵A(λ)可逆的++充分必要条件++是其行列式$|A(λ)|$为非零常数
+  - λ方阵A(λ)可逆的<u>充分必要条件</u>是其行列式$|A(λ)|$为非零常数
     - ![](https://api2.mubu.com/v3/document_image/21954114_69ad8dda-9bc4-4c2c-f117-29e71fc5ea01.png)
 - <font color=green>Smith标准形</font>
   - <mark>定义</mark>
@@ -210,7 +210,7 @@
   - 数字矩阵是特殊的λ矩阵
   - 复方阵A的特征矩阵 $λI−A$ 是λ矩阵
     - $λI−A$ 总是满秩的
-  - <font color=red>λ方阵A(λ)</font><font color=bold>可逆</font><font color=red>的</font>++<font color=underline>充分必要条件</font>++<font color=red>是其</font><font color=bold>行列式</font><font color=bold>$|A(λ)|$</font><font color=bold>为非零常数</font>
+  - <font color=red>λ方阵A(λ)</font><font color=bold>可逆</font><font color=red>的</font><u><font color=underline>充分必要条件</font></u><font color=red>是其</font><font color=bold>行列式</font><font color=bold>$|A(λ)|$</font><font color=bold>为非零常数</font>
     - - ![](https://api2.mubu.com/v3/document_image/21954114_9995b351-7c07-4d7f-85ff-7e77272a483a.png)
   - 在求λ矩阵的Smith标准形、不变因子或初等因子时
     - 可先将λ矩阵作初等变换，使得变换后的矩阵为对角（块）矩阵
@@ -431,8 +431,8 @@
   - $\begin{aligned}& X_1\perp X_2\perp\cdots\perp X_n\Rightarrow|c_1X_1\pm c_2X_2 \pm\cdots\pm c_nX_n|^2=|c_1X_1|^2+ |c_2X_2|^2+\cdots+|c_nX_n|^2\\\\&\text{此时，} X_1,X_2,\cdots,X_n \color{red}\text{称为一个正交组}\end{aligned}$
 - <font color=green>tips</font>
   - 零向量θ与任何向量均正交
-  - 正交向量组要求向量均为++非零向量++
-  - 正交向量组++线性无关++
+  - 正交向量组要求向量均为<u>非零向量</u>
+  - 正交向量组<u>线性无关</u>
   - 向量 $X$ 与 $Y$ 正交当且仅当 <font color=red>$‖X+Y‖^2=‖X‖^2+‖Y‖^2$</font>
     勾股定理
   - 在 $n$ 维内积空间中，正交向量组中的向量个数不会超过n个
@@ -531,16 +531,16 @@
   - $f$ 既是单射，又是满射
     即一一对应
 - 变换
-  - 设 $V$ 是一个非空集合，++$V$++++ 到自身的映射++称为 $V$的<mark>变换</mark>
-  - V到自身的++双射++称为V的<mark>一一变换</mark>
-  - 若V是++有限集++，V的一一变换称为V的<mark>置换</mark>
+  - 设 $V$ 是一个非空集合，<u>$V$</u><u> 到自身的映射</u>称为 $V$的<mark>变换</mark>
+  - V到自身的<u>双射</u>称为V的<mark>一一变换</mark>
+  - 若V是<u>有限集</u>，V的一一变换称为V的<mark>置换</mark>
 - 线性映射、线性变换
   - 定义
     - 设 $V$ 和 $W$ 是数域 $F$ 上的线性空间，如果映射 <font color=red>$T:V→W$</font>满足下述性质
       - <mark>可加性</mark>：$∀x,y∈V，T(x+y)=T(x)+T(y)$
       - <mark>齐次性</mark>：$∀λ∈F，T(λx)=λT(x)$
     - 称 $T$ 为 $V$ 到 $W$ 的一个线性映射
-    - 当 $V=W$ 时， 称 $T$ 为 $V$ 上的++线性变换++
+    - 当 $V=W$ 时， 称 $T$ 为 $V$ 上的<u>线性变换</u>
   - 特殊的线性变换1
     定义映射 
     - <font color=red>零变换</font>：$T(x)=θ， ∀x∈V$
@@ -555,7 +555,7 @@
     - <font color=red>旋转</font>：$T(x) = \bigg[ \begin{matrix} cos\varphi & -sin\varphi \\sin\varphi & cos\varphi \end{matrix}\bigg]x$
        为旋转角
   - 正交投影变换
-    - 设 $W$ 是线性空间 $V$ 的++非平凡子空间++，定义 $V$ 上的<font color=red>正交投影变换</font>映射 $T$为
+    - 设 $W$ 是线性空间 $V$ 的<u>非平凡子空间</u>，定义 $V$ 上的<font color=red>正交投影变换</font>映射 $T$为
     - <font color=red>$T(x)=\mathrm{Proj_W}x$</font>
     - 若$\alpha_1,\cdots,\alpha_p$ 为 $W$ 的标准正交基
       - $T(x)=\mathrm{Proj_W}x\\=(x,\alpha_1)\alpha_1+(x,\alpha_2)\alpha_2+\cdots+(x,\alpha_p)\alpha_p$
