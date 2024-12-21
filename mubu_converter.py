@@ -38,7 +38,7 @@ class MubuConverter:
             bold_tag.insert_after("**")   
         for highlight_tag in soup.find_all(class_='highlight-yellow'):
             highlight_tag.insert_before("<mark>") 
-            highlight_tag.insert_after("</mark>)")   
+            highlight_tag.insert_after("</mark>")   
         for underline_tag in soup.find_all(class_='underline'):
             underline_tag.insert_before("++")  
             underline_tag.insert_after("++")    
