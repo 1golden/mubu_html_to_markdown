@@ -42,7 +42,7 @@
   - $AA^H$ 矩阵的迹
     - $A_{n\times p}=\begin{pmatrix}a_{11}&\cdots&a_{1p}\\\vdots&\ddots&\vdots\\a_{n1}&\cdots&a_{np}\end{pmatrix}\in C^{n\times p}\\ A_{p\times n}^H=\begin{pmatrix}\overline{a_{11}}&\cdots&\overline{a_{n1}}\\\vdots&\ddots&\vdots\\\overline{a_{1p}}&\cdots&\overline{a_{np}}\end{pmatrix}\in C^{p\times n}$
     - $\displaystyle tr(A^HA)=tr(AA^H)=\sum\limits_{i=1,j=1}^n{|a_{ij}|^2}$
-    - 推论
+    - <strong>推论</strong>
       - $tr(AB^H)=tr(B^HA)=\sum a_{ij}\overline{b_{ij}}$
   - $A^HA$ 与 $AA^H$只相差 $n-p$ 个 0 根
     - proof
@@ -102,7 +102,9 @@
 - $A^TA=AA^T=I$
 - <mark>性质</mark>
   - 正交矩阵的任一行（列）同时乘以−1时，得到的新矩阵仍为正交矩阵
-  - 正交矩阵的行列式必为 ±1
+  - 正交阵的所有特征值的模值为1
+  - 正交阵的行列式必为 $\pm1$
+  - 正交阵的乘积仍为正交阵
 ## <font color=blue>优阵（U阵）</font>
 
 
@@ -124,6 +126,8 @@
   - $(Ax,Ay)=(x,y)$
 - <mark>拓展性质</mark>
   - U阵的任一行（列）同时乘以模为1的任何数后，得到的新矩阵仍为U阵
+  - U阵的乘积仍为U阵
+  - $A$ 所有特征值的模值为1，行列式的模值为1
 ## <font color=blue>正规阵</font>
 
 
@@ -152,31 +156,31 @@
 
 
 - <font color=green>定义</font>
-  - 以 λ多项式 为元素的矩阵称为λ矩阵，记为`A(λ)`
+  - 以 <strong>λ多项式</strong> 为元素的矩阵称为λ矩阵，记为`A(λ)`
     - <mark>$A(λ)=[a_{ij}(λ)]_{m×n}$</mark>
-- <font color=bold>λ矩阵的秩</font>
-  - 矩阵A(λ)中<u>非零子式的最高阶数r</u> 定义为A(λ)的秩，记为`rank(A(λ))=r`
-  - 例子
+- <strong><font color=bold>λ矩阵的秩</font></strong>
+  - 矩阵A(λ)中<strong><u>非零子式的最高阶数r</u></strong> 定义为A(λ)的秩，记为`rank(A(λ))=r`
+  - <strong>例子</strong>
     - ![](https://api2.mubu.com/v3/document_image/21954114_81336d7f-e5a5-482e-b7fb-c838996a23b9.png)
-- <font color=bold>λ矩阵相抵</font>
+- <strong><font color=bold>λ矩阵相抵</font></strong>
   - <mark>定义</mark>
     - 若λ矩阵A(λ)经过<mark>有限次初等变换</mark>化为B(λ)，则称A(λ)与B(λ)<font color=red>相抵</font>
     - $A(λ)≅B(λ)$
   - <mark>性质</mark>
-    - λ矩阵相抵则其秩相同，反之则不然
-    - 相抵的λ矩阵具有相同的秩和相同的各阶行列式因子
+    - λ矩阵<strong>相抵</strong>则其<strong>秩相同</strong>，反之则不然
+    - 相抵的λ矩阵具有<strong>相同的秩</strong>和<strong>相同的各阶行列式因子</strong>
     - λ矩阵A(λ)与B(λ)相抵 的<mark>充要条件</mark>
       - or 完全一致的<font color=green>不变因子</font>
       - or 具有<u>相同的各阶行列式因子</u>
       - or 完全一致的<font color=green>初等因子</font>，且 <font color=green>$rank\big (A(λ)\big)=rank\big(B(λ)\big)$</font>
-    - 复方阵A和B相似当且仅当它们的特征矩阵相抵
+    - 复方阵A和B<strong>相似</strong>当且仅当它们的<strong>特征矩阵相抵</strong>
       - - ![](https://api2.mubu.com/v3/document_image/21954114_f94dc556-0da1-4575-f465-23e777e6293a.png)
         - ![](https://api2.mubu.com/v3/document_image/21954114_1f7d7b7c-a585-4c38-d907-eee79c2df57d.png)
   - <mark>例子</mark>
     - ![](https://api2.mubu.com/v3/document_image/21954114_b9e865ad-43ac-4bd5-8818-6bd1f56e1db2.png)
-- <font color=bold>λ矩阵的逆矩阵</font>
+- <strong><font color=bold>λ矩阵的逆矩阵</font></strong>
   - 设 $A(λ)$ 是 $n$ 阶 $λ$ 方阵，若存在 $n$ 阶$λ$方阵$B(λ)$满足<font color=red>$A(λ)B(λ)=B(λ)A(λ)=I$</font> 则称λ矩阵A(λ)是可逆的,并称B(λ)为A(λ)的逆矩阵,记作$A(λ)^{−1}$
-  - λ方阵A(λ)可逆的<u>充分必要条件</u>是其行列式$|A(λ)|$为非零常数
+  - λ方阵A(λ)<strong>可逆</strong>的<u>充分必要条件</u>是其<strong>行列式</strong><strong>$|A(λ)|$</strong><strong>为非零常数</strong>
     - ![](https://api2.mubu.com/v3/document_image/21954114_69ad8dda-9bc4-4c2c-f117-29e71fc5ea01.png)
 - <font color=green>Smith标准形</font>
   - <mark>定义</mark>
@@ -195,7 +199,7 @@
 - <font color=green>不变因子</font>
   - <mark>定义</mark>
     - 在 λ 矩阵 A(λ) 的Smith标准形中
-    - <font color=red>$d_1(λ),⋯,d_{r}(λ)$</font> 由 A(λ) 唯一确定的，称为A(λ)的不变因子
+    - <font color=red>$d_1(λ),⋯,d_{r}(λ)$</font> 由 A(λ) 唯一确定的，称为A(λ)的<strong>不变因子</strong>
 - <font color=green>初等因子</font>
   - <mark>定义</mark>
     - ![](https://api2.mubu.com/v3/document_image/21954114_671dda90-1b75-43c1-9d17-b2bf7da7a51e.png)
@@ -210,7 +214,7 @@
   - 数字矩阵是特殊的λ矩阵
   - 复方阵A的特征矩阵 $λI−A$ 是λ矩阵
     - $λI−A$ 总是满秩的
-  - <font color=red>λ方阵A(λ)</font><font color=bold>可逆</font><font color=red>的</font><u><font color=underline>充分必要条件</font></u><font color=red>是其</font><font color=bold>行列式</font><font color=bold>$|A(λ)|$</font><font color=bold>为非零常数</font>
+  - <font color=red>λ方阵A(λ)</font><strong><font color=bold>可逆</font></strong><font color=red>的</font><u><font color=underline>充分必要条件</font></u><font color=red>是其</font><strong><font color=bold>行列式</font></strong><strong><font color=bold>$|A(λ)|$</font></strong><strong><font color=bold>为非零常数</font></strong>
     - - ![](https://api2.mubu.com/v3/document_image/21954114_9995b351-7c07-4d7f-85ff-7e77272a483a.png)
   - 在求λ矩阵的Smith标准形、不变因子或初等因子时
     - 可先将λ矩阵作初等变换，使得变换后的矩阵为对角（块）矩阵
@@ -233,8 +237,8 @@
       - ![](https://api2.mubu.com/v3/document_image/21954114_d1334d12-5a51-43f6-9053-0b6c515803cf.png)
 - <font color=green>性质</font>
   设  和 均为内积空间  的度量矩阵
-  - $G(ε_1,⋯,ε_n)$ 和 $G(ϵ_1,⋯,ϵ_n)$ 是正定Hermite矩阵
-  - $G(ε_1,⋯,ε_n)$ 和 $G(ϵ_1,⋯,ϵ_n)$ 合同
+  - $G(ε_1,⋯,ε_n)$ 和 $G(ϵ_1,⋯,ϵ_n)$ 是<strong>正定Hermite矩阵</strong>
+  - $G(ε_1,⋯,ε_n)$ 和 $G(ϵ_1,⋯,ϵ_n)$ <strong>合同</strong>
     - 即存在非奇异矩阵（可逆矩阵） $P$ 使得
     - $P^HG(ε_1,⋯,ε_n)P=G(ϵ_1,⋯,ϵ_n)$
     - $P$ 是由基 $ε_1,⋯,ε_n$ 到基$ϵ_1,⋯,ϵ_n$ 的过渡矩阵
@@ -243,13 +247,13 @@
 
 
 - <font color=green>定义</font>
-  - 设 $w∈ℂ^n$ 是单位向量
+  - 设 $w∈ℂ^n$ 是<strong>单位向量</strong>
   - $H(w)=I−2ww^H$
 - <font color=green>性质</font>
   - $\big(H(w)\big)^H=H(w)=\big(H(w)\big)^{−1}$
   - $|H(w)|=−1$
     特征值 n-1个1， 1个 -1
-  - 设 $x, y∈ℂ^n$ 且$x≠y$，则存在单位向量 $w$ 使得$H(w)x=y$ 的充分必要条件是
+  - 设 $x, y∈ℂ^n$ 且$x≠y$，则存在单位向量 $w$ 使得$H(w)x=y$ 的<strong>充分必要条件</strong>是
     - $x^Hx=y^Hy\quad,x^Hy=y^Hx$
     - 此时可取 $\displaystyle w=\frac{e^{iθ}(x−y)}{‖x−y‖}$
       其中θ为任一实数，实际求就取0
@@ -266,9 +270,9 @@
 - <mark>定义</mark>
   - - ![](https://api2.mubu.com/v3/document_image/21954114_58dbab2b-4db5-43b3-cc32-4eb97fa32c61.png)
 - <mark>性质</mark>
-  - 方阵A是单纯矩阵的充分必要条件
-    - or $A$的特征矩阵 $λI−A$的<font color=green>初等因子</font>是一次的
-    - or $A$的特征矩阵 $λI−A$ 的<font color=green>不变因子</font>无重根
+  - 方阵A是单纯矩阵的<strong>充分必要条件</strong>
+    - or $A$的特征矩阵 $λI−A$的<font color=green>初等因子</font>是<strong>一次</strong>的
+    - or $A$的特征矩阵 $λI−A$ 的<font color=green>不变因子</font><strong>无重根</strong>
 ## <font color=blue>幂零阵、幂等阵</font>
 
 
@@ -302,7 +306,7 @@
   - $\overline{w}=\overline{a+bi}=a-bi$
 - <mark>矩阵的共轭</mark>——矩阵内每个元素取共轭
   - $\overline{A}=(\overline{a_{i,j}})$
-- <font color=bold>性质</font>
+- <strong><font color=bold>性质</font></strong>
   - <mark>实矩阵</mark>
     - $\overline{A}=(\overline{a_{i,j}})=(a_{i,j})=A$
   - $\text{对于任意 } A=A_{m\times n}\in\mathbb{C}^{m,n}, B=B_{m\times p}\in\mathbb{C}^{n,p}$
@@ -365,16 +369,27 @@
 - 设矩阵<mark>$A∈ℂ^{n×n}$</mark>的 n 个特征值为<mark>$λ_1,⋯,λ_n$</mark>，<mark>$φ(λ)$</mark>为任一多项式
   - 则矩阵多项式<mark>$φ(A)$</mark>的n个特征值为<mark>$φ(λ_1),⋯,φ(λ_n)$</mark>
 - [矩阵分析：特征值，相似度对角化，Jordan标准形_jordan标准型和特征值的关系-CSDN博客](https://blog.csdn.net/qq_42192693/article/details/122248940)
+- <font color=green>特征子空间</font>
+  - 设$\lambda$是矩阵$A\in \Bbb C^{n\times n}$的一个特征值
+  - <font color=red>$E(\lambda )=\{x∈\Bbb C^n|Ax=\lambda x\}$</font>
+  - $E(\lambda )$是$\Bbb C^n$的<strong>线性子空间</strong>，称为<strong>属于特征值</strong><strong>$\lambda$</strong>的<mark>特征子空间</mark>
+  - <font color=red>$\rm dim(E(λ))$</font>为特征值$\lambda$的<mark>几何重数</mark>
+    - 类型对比 <mark>代数重数</mark>
+      - 矩阵$A$的特征值$λ_i$作为特征方程根的重数，称为特征值$\lambda_i$的<strong>代数重数</strong>
+      - <font color=red>$\rm n−rank(\lambda I−A)$</font>
+    - `!!!` 几何重数$\leq$代数重数
+      - 示例
+        - ![](https://api2.mubu.com/v3/document_image/21954114_6a0c897e-c82b-412b-a7b4-3abb0e67f9b2.png)
 ## <font color=blue>右逆、左逆</font>
 
 
 
-- A有右逆 的充要条件
+- A有<strong>右逆</strong> 的充要条件
   即存在矩阵B使得
-  - A为行满秩矩阵
-- A有左逆 的充要条件
+  - A为<strong>行满秩</strong>矩阵
+- A有<strong>左逆</strong> 的充要条件
   即存在矩阵B使得
-  - A为列满秩矩阵
+  - A为<strong>列满秩</strong>矩阵
 ## <font color=blue>内积</font><font color=codespan>Inner product</font>
 
 
@@ -416,7 +431,7 @@
   - <mark>内积形式（列分块）</mark>
     - $\begin{aligned}A&=\begin{pmatrix}a_{11}&\cdots&a_{1p}\\\vdots&\ddots&\vdots\\a_{n1}&\cdots&a_{np}\end{pmatrix}\in C^{n\times p}\\&=(\alpha_1,\cdots,\alpha_p),\text{其中}\alpha_i\text{为}n\text{维列向量}(n\times1\text{阶矩阵})\end{aligned}$
     - $\begin{aligned}A^{H}& =\begin{pmatrix}\overline{a_{11}}&&\cdots&&\overline{a_{n1}}\\\vdots&&\ddots&&\vdots\\\overline{a_{1p}}&&\cdots&&\overline{a_{np}}\end{pmatrix} \in C^{p\times n} \\&=\begin{pmatrix}\overline{\alpha_1}^T\\\vdots\\\overline{\alpha_p}^T\end{pmatrix}\text{,其中}\overline{\alpha_1}^T\text{是}n\text{维行向量}1\times n\text{阶矩阵})\end{aligned}$
-    - $\begin{aligned}A^{H}A& =\begin{pmatrix}\overline{\alpha_1}^T\\\vdots\\\overline{\alpha_p}^T\end{pmatrix}(\alpha_1,\cdots,\alpha_p) \\&=\begin{pmatrix}\overline{\alpha_1}^T\alpha_1&&\overline{\alpha_1}^T\alpha_2&&\cdots&\overline{\alpha_1}^T\alpha_p\\\overline{\alpha_2}^T\alpha_1&&\overline{\alpha_2}^T\alpha_2&&\cdots&\overline{\alpha_2}^T\alpha_p\\\vdots&&\vdots&&\ddots&\vdots\\\overline{\alpha_p}^T\alpha_1&&\overline{\alpha_p}^T\alpha_2&&\cdots&\overline{\alpha_p}^T\alpha_p\end{pmatrix} \\&=\begin{pmatrix}(\alpha_1,\alpha_1)&&(\alpha_2,\alpha_1)&&\cdots&&(\alpha_p,\alpha_1)\\(\alpha_1,\alpha_2)&&(\alpha_2,\alpha_2)&&\cdots&&\alpha_p,\alpha_2)\\\vdots&&\vdots&&\ddots&&\vdots\\(\alpha_1,\alpha_p)&&(\alpha_2,\alpha_p)&&\cdots&&\alpha_p,\alpha_p)\end{pmatrix} \\&=\begin{pmatrix}\overline{(\alpha_1,\alpha_1)}&&\overline{(\alpha_1,\alpha_2)}&&\cdots&&\overline{(\alpha_1,\alpha_p)}\\\overline{(\alpha_2,\alpha_1)}&&\overline{(\alpha_2,\alpha_2)}&&\cdots&&\overline{(\alpha_2,\alpha_p)}\\\vdots&&\vdots&&\ddots&&\vdots\\\overline{(\alpha_p,\alpha_1)}&&\frac{\vdots}{(\alpha_p,\alpha_2)}&&\cdots&&\overline{(\alpha_p,\alpha_p)}\end{pmatrix} \\&==\begin{pmatrix}|\alpha_1|^2&\overline{(\alpha_1,\alpha_2)}&\cdots&\overline{(\alpha_1,\alpha_p)}\\\overline{(\alpha_2,\alpha_1)}&|\alpha_2|^2&\cdots&\overline{(\alpha_2,\alpha_p)}\\\vdots&\vdots&\ddots&\vdots\\\overline{(\alpha_p,\alpha_1)}&\overline{(\alpha_p,\alpha_2)}&\cdots&|\alpha_\text{p}|^2\end{pmatrix}\end{aligned}$
+    - $\begin{aligned}A^{H}A& =\begin{pmatrix}\overline{\alpha_1}^T\\\vdots\\\overline{\alpha_p}^T\end{pmatrix}(\alpha_1,\cdots,\alpha_p) \\&=\begin{pmatrix}\overline{\alpha_1}^T\alpha_1&&\overline{\alpha_1}^T\alpha_2&&\cdots&\overline{\alpha_1}^T\alpha_p\\\overline{\alpha_2}^T\alpha_1&&\overline{\alpha_2}^T\alpha_2&&\cdots&\overline{\alpha_2}^T\alpha_p\\\vdots&&\vdots&&\ddots&\vdots\\\overline{\alpha_p}^T\alpha_1&&\overline{\alpha_p}^T\alpha_2&&\cdots&\overline{\alpha_p}^T\alpha_p\end{pmatrix} \\&=\begin{pmatrix}(\alpha_1,\alpha_1)&&(\alpha_2,\alpha_1)&&\cdots&&(\alpha_p,\alpha_1)\\(\alpha_1,\alpha_2)&&(\alpha_2,\alpha_2)&&\cdots&&(\alpha_p,\alpha_2)\\\vdots&&\vdots&&\ddots&&\vdots\\(\alpha_1,\alpha_p)&&(\alpha_2,\alpha_p)&&\cdots&&(\alpha_p,\alpha_p)\end{pmatrix} \\&=\begin{pmatrix}\overline{(\alpha_1,\alpha_1)}&&\overline{(\alpha_1,\alpha_2)}&&\cdots&&\overline{(\alpha_1,\alpha_p)}\\\overline{(\alpha_2,\alpha_1)}&&\overline{(\alpha_2,\alpha_2)}&&\cdots&&\overline{(\alpha_2,\alpha_p)}\\\vdots&&\vdots&&\ddots&&\vdots\\\overline{(\alpha_p,\alpha_1)}&&\frac{\vdots}{(\alpha_p,\alpha_2)}&&\cdots&&\overline{(\alpha_p,\alpha_p)}\end{pmatrix} \\&==\begin{pmatrix}|\alpha_1|^2&\overline{(\alpha_1,\alpha_2)}&\cdots&\overline{(\alpha_1,\alpha_p)}\\\overline{(\alpha_2,\alpha_1)}&|\alpha_2|^2&\cdots&\overline{(\alpha_2,\alpha_p)}\\\vdots&\vdots&\ddots&\vdots\\\overline{(\alpha_p,\alpha_1)}&\overline{(\alpha_p,\alpha_2)}&\cdots&|\alpha_\text{p}|^2\end{pmatrix}\end{aligned}$
 ## <font color=blue>正交</font><font color=codespan>orthogonal</font>
 
 
@@ -431,9 +446,9 @@
   - $\begin{aligned}& X_1\perp X_2\perp\cdots\perp X_n\Rightarrow|c_1X_1\pm c_2X_2 \pm\cdots\pm c_nX_n|^2=|c_1X_1|^2+ |c_2X_2|^2+\cdots+|c_nX_n|^2\\\\&\text{此时，} X_1,X_2,\cdots,X_n \color{red}\text{称为一个正交组}\end{aligned}$
 - <font color=green>tips</font>
   - 零向量θ与任何向量均正交
-  - 正交向量组要求向量均为<u>非零向量</u>
-  - 正交向量组<u>线性无关</u>
-  - 向量 $X$ 与 $Y$ 正交当且仅当 <font color=red>$‖X+Y‖^2=‖X‖^2+‖Y‖^2$</font>
+  - <strong>正交向量组</strong>要求向量均为<u>非零向量</u>
+  - <strong>正交向量组</strong><u>线性无关</u>
+  - 向量 $X$ 与 $Y$ 正交<strong>当且仅当</strong> <font color=red>$‖X+Y‖^2=‖X‖^2+‖Y‖^2$</font>
     勾股定理
   - 在 $n$ 维内积空间中，正交向量组中的向量个数不会超过n个
   - 拓展
@@ -452,7 +467,7 @@
 
 - <font color=green>定义</font>
 - <font color=green>tips</font>
-  - 两矩阵相似的充分必要条件是两矩阵的特征矩阵等价
+  - 两矩阵相似的充分必要条件是两矩阵的<strong>特征矩阵等价</strong>
 ## <font color=blue>矩阵的秩</font>
 
 
@@ -474,7 +489,7 @@
 
 
 - 对于一元多项式 <font color=red>$g(λ)=a_nλ^n+a_{n−1}λ^n−1+⋯+a_1λ+a_0$</font>
-- 如果 $a_n≠0$，则称 <font color=red>$a_nλ^n$</font>为多项式的首项
+- 如果 $a_n≠0$，则称 <font color=red>$a_nλ^n$</font>为多项式的<strong>首项</strong>
 - $n$ 称为 $g(λ)$ 的次数，记为 <font color=red>$deg\big(g(λ)\big)=n$</font>
 - $a_n$ 称为 $g(λ)$ 的首项系数
 - 若<font color=red> </font><font color=red>$a_n=1$</font>，则称 $g(λ)$ 为<mark>首1多项式</mark>
@@ -483,12 +498,12 @@
 
 
 - <mark>定义</mark>
-  - 复方阵A的零化多项式中最小次数的<font color=blue>首1多项式</font>称为矩阵A的最小多项式
+  - 复方阵A的零化多项式中<strong>最小次数的</strong><font color=blue>首1多项式</font>称为矩阵A的最小多项式
   - $m_A(λ)$
 - <mark>性质</mark>
   - 矩阵A的最小多项式$m_A(λ)$是唯一的，且可整除矩阵A的任一零化多项式
     - 特别的 $m_A(λ) | f_A(λ)$
-  - 矩阵A的特征多项式$f_A(λ)$与最小多项式$m_A(λ)$具有相同的根（不计重数）
+  - 矩阵A的特征多项式$f_A(λ)$与最小多项式$m_A(λ)$具有<strong>相同的根（不计重数）</strong>
 ## <font color=blue>Jordan块</font>参考
 
 
@@ -502,7 +517,7 @@
       - ![](https://api2.mubu.com/v3/document_image/21954114_e0f1b31d-fcec-46f7-bfdc-d1525a081411.png)
 - <font color=green>定理</font>
   - <mark>Jordan标准形定理</mark>
-    - 设矩阵J是复方阵A的Jordan标准形，则矩阵A与矩阵J相似
+    - 设矩阵J是复方阵A的Jordan标准形，则矩阵A与矩阵J<strong>相似</strong>
     - 例子
       - 题目
         - ![](https://api2.mubu.com/v3/document_image/21954114_09e2cb3a-b0ca-4eda-e41b-f3e5c96b485b.png)
@@ -517,7 +532,7 @@
   - Jordan块本身就是一个Jordan矩阵
   - 对角矩阵是一个Jordan矩阵，她的每个Jordan块都是一阶的 $\Leftrightarrow$ A 的初等因子都是一次的
   - Jordan标准型中，不同Jordan块的对角线元素可能相同，故特征值$\lambda_i$的代数重数 $\ge$ $\lambda_i$ 对应的某个Jordan块的阶数
-## <font color=blue>映射、变换</font>#to-do
+## <font color=blue>映射、变换</font>
 
 
 
@@ -530,35 +545,125 @@
 - <font color=green>双射</font>
   - $f$ 既是单射，又是满射
     即一一对应
-- 变换
+- <font color=green>变换</font>
   - 设 $V$ 是一个非空集合，<u>$V$</u><u> 到自身的映射</u>称为 $V$的<mark>变换</mark>
   - V到自身的<u>双射</u>称为V的<mark>一一变换</mark>
   - 若V是<u>有限集</u>，V的一一变换称为V的<mark>置换</mark>
-- 线性映射、线性变换
-  - 定义
-    - 设 $V$ 和 $W$ 是数域 $F$ 上的线性空间，如果映射 <font color=red>$T:V→W$</font>满足下述性质
+- <font color=green>线性映射、线性变换</font>
+  - <strong>定义</strong>
+    - 设 $V$ 和 $W$ 是数域 $F$ 上的线性空间，如果映射 <font color=red>$T:V→W$</font>满足下述性质，称 $T$ 为 $V$ 到 $W$ 的一个<strong>线性映射</strong>
       - <mark>可加性</mark>：$∀x,y∈V，T(x+y)=T(x)+T(y)$
       - <mark>齐次性</mark>：$∀λ∈F，T(λx)=λT(x)$
-    - 称 $T$ 为 $V$ 到 $W$ 的一个线性映射
-    - 当 $V=W$ 时， 称 $T$ 为 $V$ 上的<u>线性变换</u>
-  - 特殊的线性变换1
-    定义映射 
-    - <font color=red>零变换</font>：$T(x)=θ， ∀x∈V$
-    - <font color=red>恒等变换</font>：$T(x)=x，∀x∈V$
-    - <font color=red>负变换</font>：$T(x)=− x，∀x∈V$
-  - 特殊的线性变换2
-    定义 ​
-    - <font color=red>伸缩</font>：$T(x)=\bigg[ \begin{matrix} k_1 & 0 \\ 0 & k_2 \end{matrix} \bigg]x$
-       和 为正常数
-      ​
-    - <font color=red>反射</font>：$T(x)=(x_1,−x_2)$
-    - <font color=red>旋转</font>：$T(x) = \bigg[ \begin{matrix} cos\varphi & -sin\varphi \\sin\varphi & cos\varphi \end{matrix}\bigg]x$
-       为旋转角
-  - 正交投影变换
+    - 特别的，当 $V=W$ 时， 称 $T$ 为 $V$ 上的<strong><u>线性变换</u></strong>
+      - <strong>特殊的线性变换1</strong>
+        定义映射 
+        - <font color=red>零变换</font>：$T(x)=θ， ∀x∈V$
+        - <font color=red>恒等变换</font>：$T(x)=x，∀x∈V$
+        - <font color=red>负变换</font>：$T(x)=− x，∀x∈V$
+      - <strong>特殊的线性变换2</strong>
+        定义 ​
+        - <font color=red>伸缩</font>：$T(x)=\bigg[ \begin{matrix} k_1 & 0 \\ 0 & k_2 \end{matrix} \bigg]x$
+           和 为正常数
+          ​
+        - <font color=red>反射</font>：$T(x)=(x_1,−x_2)$
+        - <font color=red>旋转</font>：$T(x) = \bigg[ \begin{matrix} cos\varphi & -sin\varphi \\sin\varphi & cos\varphi \end{matrix}\bigg]x$
+           为旋转角
+  - <strong>正交投影变换</strong>
     - 设 $W$ 是线性空间 $V$ 的<u>非平凡子空间</u>，定义 $V$ 上的<font color=red>正交投影变换</font>映射 $T$为
+      平凡子空间指零向量和自身
     - <font color=red>$T(x)=\mathrm{Proj_W}x$</font>
-    - 若$\alpha_1,\cdots,\alpha_p$ 为 $W$ 的标准正交基
+    - 若$\alpha_1,\cdots,\alpha_p$ 为 $W$ 的<strong>标准正交基</strong>
       - $T(x)=\mathrm{Proj_W}x\\=(x,\alpha_1)\alpha_1+(x,\alpha_2)\alpha_2+\cdots+(x,\alpha_p)\alpha_p$
+  - <strong>关于线性映射的tips</strong>
+    - <mark>定理 </mark>设$T$是数域 $F$上线性空间 $V$ 到 $W$的线性映射，若$α_1,⋯,α_p$是 $V$ 的一组向量，$k_1,\cdots,k_p \in F$
+      - $T(k_1α_1+⋯+k_pα_p)=k_1T(α_1)+⋯+k_pT(α_p)$
+    - <mark>推论 </mark>设$T$是数域 $F$上线性空间 $V$ 到 $W$的线性映射
+      - <font color=red>$T(θ)=θ^′， θ∈V，θ^′∈W$</font>
+        几何意义——线性映射必须保持原点不动，故解析几何中常见的平移变换一般不是线性变换
+      - <font color=red>$T(−x)=−T(x)，∀x∈V$</font>
+      - 若 $α_1,⋯,α_p$ 是 $V$ 中一组<u>线性相关</u>向量, 则$T(α_1),⋯,T(α_p)$是$W$中一组<u>线性相关</u>向量
+      - 若 $T(α_1),⋯,T(α_p)$ 是 $W$ 中一组<u>线性无关</u>向量，则 $α_1,⋯,α_p$ 是 $V$ 中一组<u>线性无关</u>向量
+    - <mark>定理 </mark>设$T$是数域 $F$上 $n$ 维线性空间 $V$ 到 $m$ 维$W$的线性映射
+      - 当且仅当 $T$ 是<strong>单射</strong>时，$V$中<strong>线性无关向量组</strong>的<strong><u>像</u></strong>是$W$中<strong>线性无关向量组</strong>
+      - 当且仅当 $T$ 是<strong>单射</strong>时，$V$中<strong>一组基</strong>的<strong><u>像</u></strong>是 $W$ 中<strong>一组基</strong>。
+        此时映射  是双射
+    - 线性映射不一定将一组基映射为像空间的一组基
+  - <strong>线性映射运算</strong>
+    - 线性映射的<strong>加法</strong>运算
+      - 设 $T_1, T_2\in \mathcal L(V,W)$，定义 $T_1$ 与 $T_2$ 的<mark>和</mark>为$\\$ <font color=red>$(T_1+T_2)(x)=T_1(x)+T_2(x)$</font>，$\forall x∈V$
+    - 线性映射的<strong>数乘</strong>运算
+      - 设$T\in \mathcal L(V,W)，\lambda \in F$， 定义 $λ$ 与 $T$ 的<mark>数乘</mark>为$\\$ <font color=red>$(\lambda T)( x)=\lambda\cdot T( x)$</font>，$\forall x∈V$
+  - <strong>线性映射空间、线性变换空间</strong>
+    - 集合 $\mathcal L(V,W)$ 中赋以加法和数乘构成数域$F$上的线性空间，称为<font color=red>线性映射空间</font>
+    - 特别地，$\mathcal L(V)$称为<font color=red>线性变换空间</font>
+    - <strong>注意</strong>：<font color=red>$\rm dim(\mathcal L(V,W)) = \rm dim(V) \times \rm dim(W)$</font>
+  - 线性映射<strong>值空间</strong>和<strong>核空间</strong>
+    - <strong>定义</strong>
+      - 设 $T \in \mathcal L(V,W)$
+      - 线性映射$T$的<mark>核空间</mark> (零空间)
+        - <font color=red>$N(T)=\{x∈V|T(x)=θ\}$</font>
+      - $T$的<strong>零度</strong> (亏)
+        - <font color=red>$\rm dim(N(T))$</font>
+      - 线性映射$T$的<mark>值空间</mark>（像空间）
+        - <font color=red>$R(T)=\{y∈W|y=T(x),∀x∈V\}$</font>
+      - $T$的<strong>秩</strong>
+        - <font color=red>$\rm dim(R(T))$</font>
+    - <strong>性质</strong>
+      - 设$V$和$W$是数域$F$上的$n$维和$m$维线性空间，若$T∈L(V,W)$在$V$的基$ε_1,⋯,ε_n$和$W$的基$η_1,⋯,η_m$下的矩阵为$A$
+        - $\rm dimN(T)= dimN(A)$
+        - $\rm dimR(T)=dimR(A)=rank(A)$
+        - $\rm dimN(A)+dimR(A)=n$
+  - <font color=blue>亏加秩定理</font>
+- <font color=green>正交变换、酉变换</font>
+  - <strong>定义</strong>
+    - 若<font color=red>欧氏</font> (<font color=purple>酉</font>)空间中的线性变换 $T$ <u>保持向量的内积不变</u>
+    - $(T(x),T(y))=(x,y)，∀x,y∈V$
+    - 称 $T$ 为<font color=red>正交</font>（<font color=purple>酉</font>）变换
+  - <strong>判定（充要条件）</strong>
+    设V是n维欧氏（酉）空间，T∈L(V)
+    - $T$保持长度不变，即 $\|T(x)\|=\|x\|$
+    - 若 $ξ_1,⋯,ξ_n$ 是$V$ 中一组<strong>标准正交基</strong>，$\\$ 则$T(ξ_1),⋯,T(ξ_n)$ 也是$V$ 中一组<strong>标准正交基</strong>
+    - $T$在$V$的任一标准正交基下的矩阵为正交（酉）矩阵
+- <font color=green>同构映射 </font>
+  - <strong>定义</strong>
+    其实就是`线性映射+双射`
+    - 设$V$和$W$是数域$F$上的线性空间，$\forall x,y\in V$， $\forall λ\in F$
+    - 存在<strong>双射</strong> $f:V→W$满足
+      - （1）<font color=red>$f(x+y)=f(x)+f(y)$</font>
+      - （2）<font color=red>$f(\lambda x)=\lambda f(x)$</font>
+    - 则称线性空间$V$与$W$<mark>同构</mark>，$f$是$V$到$W$的<mark>同构映射</mark>
+  - <strong>性质</strong>
+    设V和W是数域F上的线性空间，T: V→W是同构映射
+    - <font color=red>$T(\theta) = \theta^{\prime}$</font>，$\theta\in V,\theta^{\prime}\in W$
+    - <font color=red>$T(-x)=-T(x)$</font>，$\forall x\in V$
+    - <font color=red>$T(\sum\alpha_ix_i) = \sum \alpha_iT(x_i)$</font>，$\forall \alpha_i\in F,\forall x_i\in V$
+    - $V$的向量组 $x_1,⋯,x_r$ <strong>线性相关</strong>当且仅当其像$T(x_1),⋯,T(x_r)$<strong>线性相关</strong>
+    - 若 $ε_1,⋯,ε_n$ 是$V$的一组基，则$T(ε_1),⋯,T(ε_n)$是$W$的一组基
+    - $T$的<strong>逆映射</strong>$T^{−1}: W→V$<strong>存在</strong>且是<strong>同构映射</strong>
+  - <strong>tips</strong>
+    - 线性空间<strong>同构</strong><mark>当且仅当</mark>它们的<strong>维数相等</strong>
+    - 任一实（复）$n$ 维线性空间均与 $\Bbb R^n（\Bbb C^n）$ 同构
+    - 设$V$是数域 $\Bbb R（\Bbb C）$上的$n$维线性空间，则线性变换空间$L(V)$与 $\Bbb R^{n\times n}$（或 $\Bbb C^{n\times n}$）同构
+- <font color=green>通过矩阵乘法实现线性映射</font>
+  - <strong>矩阵</strong>
+    - 定义
+      - ![](https://api2.mubu.com/v3/document_image/21954114_3591cd2b-e7c3-4b25-80e0-4e66b84753c3.png)
+      - ![](https://api2.mubu.com/v3/document_image/21954114_6291d483-0929-4aaf-c35f-92232b0a6414.png)
+  - <strong>线性映射与矩阵的关系</strong>
+    - 示例
+      - ![](https://api2.mubu.com/v3/document_image/21954114_9f4c5a13-8b69-4a51-edb7-51feb60c0ee8.png)
+  - <strong>通过矩阵乘法实现线性映射</strong>
+    - 设 $T\in \mathcal L(V,W)$，$T$在$V$的基$ε_1,⋯,ε_n$和$W$的基$η_1,⋯,η_m$下的矩阵为$A$。
+      - $\Rightarrow$ <font color=red>$T(ε_1,⋯,ε_n)\\ \triangleq[T(ε_1),⋯,T(ε_n)]\\=[η_1,⋯,η_m]A$</font>
+    - $\forall x\in V$，设
+      - <font color=red>$x=[ε_1,⋯,ε_n] \alpha$</font>
+      - <font color=red>$T(x)=[η_1,⋯,η_m]\beta$</font>
+    - $\Rightarrow$ <font color=red>$\beta=A \alpha$</font>
+  - <strong>tips</strong>
+    - 线性映射在不同基下的矩阵是相抵的
+    - 推论
+      - 相似矩阵反映的是同一个线性变换
+        - ![](https://api2.mubu.com/v3/document_image/21954114_bddb8abe-74ab-4ef1-d773-55e824490e76.png)
 
 # <font color=purple>重要公式、定理</font>
 
@@ -567,7 +672,7 @@
 
 
 - $每个n 阶方阵\mathbf{A}=\mathbf{A}_{n\times n}\\ \text{都存在优阵 }\mathbf{Q}\\ \text{ 使得}\mathbf{Q}^{-1}\mathbf{A}\mathbf{Q}=\mathbf{D}=\begin{pmatrix}\lambda_1&\cdots&*\\&\ddots&\vdots\\0&&\lambda_n\end{pmatrix}\text{为上三角}$
-- 优相似三角化：每个方阵 A 优相似于上三角
+- <strong>优相似三角化：每个方阵 A 优相似于上三角</strong>
 - <mark>Schur引理</mark>
   - 任意复方阵A优相似于上三角阵Λ
   - 即存在U阵 $U$ 使得 $U^HAU=Λ$
@@ -575,10 +680,10 @@
     - $Λ$——上三角矩阵
     - $U$——U阵
 - <mark>实方阵Schur引理</mark>
-  - 设$A∈ℝ^{n×n}$的特征值均为实数，则存在正交矩阵 $Q$ 使得
+  - 设$A∈ℝ^{n×n}$的特征值均为实数，则存在<strong>正交矩阵</strong> $Q$ 使得
     - ![](https://api2.mubu.com/v3/document_image/21954114_7d62bc79-7b96-4cb1-f3ec-3ee780008f1f.png)
 - <mark>tips</mark>
-  - Schur引理表明任意复方阵都相似于上三角阵，但并不是所有复方阵都相似于对角阵
+  - Schur引理表明任意复方阵都相似于<strong>上三角阵</strong>，但并不是所有复方阵都相似于对角阵
   - 可酉相似对角化的矩阵
     - 正规阵
       - Hermite阵、反Hermite阵、正交阵、酉矩阵等都是正规阵
@@ -621,7 +726,7 @@
 
 - <font color=green>定义</font>
   - 设V是数域F上的内积空间，对 $\forall x, y∈V$，有 <font color=red>$|(x,y)|≤‖x‖‖y‖$</font>
-  - 其中等号成立当仅当 <font color=red>$x, y$</font><font color=red>线性相关</font>
+  - 其中<strong>等号成立</strong>当仅当 <font color=red>$x, y$</font><font color=red>线性相关</font>
 - <font color=green>拓展</font>
   定义不同内积可得到不同的Cauchy不等式
   - 对 $ℝ^n$ 中任两向量 <mark>$x=[x_1,⋯,x_n]^T$</mark>和 <mark>$y=[y_1,⋯,y_n]^T$</mark>
@@ -631,7 +736,7 @@
 
 
 - 设 $T∈L(V,W)$
-- <font color=red>$dimN(T)+dimR(T)=dimV$</font>
+- <font color=red>$\rm dimN(T)+dimR(T)=dimV$</font>
 - 即线性映射 $T$ 的亏加秩等于其定义域 $V$ 空间的维数
 
 

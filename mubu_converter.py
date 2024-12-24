@@ -34,8 +34,8 @@ class MubuConverter:
         
         # 处理粗体、下划线和高亮样式
         for bold_tag in soup.find_all(class_='bold'):
-            bold_tag.insert_before("**") 
-            bold_tag.insert_after("**")   
+            bold_tag.insert_before("<strong>") 
+            bold_tag.insert_after("</strong>")   
         for highlight_tag in soup.find_all(class_='highlight-yellow'):
             highlight_tag.insert_before("<mark>") 
             highlight_tag.insert_after("</mark>")   
