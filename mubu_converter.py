@@ -8,6 +8,8 @@ from markdownify import MarkdownConverter
 import sys
 import re
 
+import urllib.parse
+
 
 class MubuConverter:
     def __init__(self, html_file: str):
@@ -30,7 +32,17 @@ class MubuConverter:
                 latex_content = annotation_tag.string.strip()
                 latex_tag.string = f'${latex_content}$'  # 添加美元符号用于 LaTeX 表达式
             else:
-                latex_tag.string = ''  # 处理无效的 LaTeX 块
+                data_raw = latex_tag.get('data-raw', '').strip()
+                if data_raw:
+                    decoded_latex = urllib.parse.unquote(data_raw)
+                    latex_tag.string = f'${decoded_latex}$'  # 直接转换 data-raw
+                else:
+                    latex_tag.string = ''  
+        
+        # 将描述区的内容变成markdown的注释
+        for note_tag in soup.find_all("div", class_="note mm-editor"):
+            note_tag.insert_before(">")  # 插入引用符号，可以正常显示描述区的公式
+    
         
         # 处理粗体、下划线和高亮样式
         for bold_tag in soup.find_all(class_='bold'):
@@ -84,14 +96,24 @@ class MubuConverter:
                 print(f"处理 H2 标题: {heading_text}")
 
             # 将该标签变为 H2 标签，添加前缀 ##
-            heading1_tag.name = "h1"
+            heading1_tag.name = "h2"
             heading1_tag.insert_before(f"## {heading_text}\n")
             content_tag.clear()
+            
+        # 处理 h3 标题
+        for heading1_tag in soup.find_all("li", class_="node heading3"):
+            content_tag = heading1_tag.find("div", class_="content")
+            if content_tag:
+                heading_text = content_tag.get_text(strip=True)
+                print(f"处理 H3 标题: {heading_text}")
 
-        # 处理class为codespan的标签，使其变为代码块
-        for code_tag in soup.find_all("span", class_="codespan"):
-            code_tag.insert_before("`")  # 插入开始的代码块符号
-            code_tag.insert_after("`")   # 插入结束的代码块符号
+            # 将该标签变为 H3 标签，添加前缀 ###
+            heading1_tag.name = "h3"
+            heading1_tag.insert_before(f"### {heading_text}\n")
+            content_tag.clear()
+
+
+
 
         # 移除不必要的标签
         head_tag = soup.find("head")
