@@ -112,9 +112,6 @@ class MubuConverter:
             heading1_tag.insert_before(f"### {heading_text}\n")
             content_tag.clear()
 
-
-
-
         # 移除不必要的标签
         head_tag = soup.find("head")
         if type(head_tag) is Tag:
@@ -136,13 +133,16 @@ class MubuConverter:
             escape_underscores=False, escape_asterisks=False, bullets='-',).convert_soup(soup)
 
 
-
         # 清除多余的换行符
         md_content = md_content.lstrip()
         # 匹配并移除所有的 = 符号
         md_content = re.sub(r"=+\n", "", md_content)
         # 删除一对**之间的所有其他 *号，原本的内容不变
         md_content = re.sub(r"\*\*(.*?)\*\*", lambda m: re.sub(r"\*", "", m.group(0)), md_content)
+        # 使用正则表达式匹配二级标题，并在其前添加分割线
+        md_content = re.sub(r"^## (.*?)\n", lambda m: f"---\n## {m.group(1)}\n", md_content, flags=re.MULTILINE)
+
+
         return md_content
 
 

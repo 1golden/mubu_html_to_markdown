@@ -2,6 +2,7 @@
 
 # <font color=purple>特殊矩阵</font>
 
+---
 ## <font color=blue>H 阵</font>
 
 
@@ -73,6 +74,7 @@
     - ![](https://api2.mubu.com/v3/document_image/21954114_625102e6-be5d-4ae6-b7cf-4d8668b4e94d.png)
   - proof 2——只需证$A^HAX= 0$ 的解也是 $AX=0$ 的解
     - ![](https://api2.mubu.com/v3/document_image/21954114_f0969394-dba4-4830-a01a-61a838edf46d.png)
+---
 ## <font color=blue>二次型、正定阵</font>
 
 
@@ -120,6 +122,7 @@
 
 - 实正定阵的重要结论
   - ![](https://api2.mubu.com/v3/document_image/21954114_51def1d6-93b6-474f-a962-27c58d20e1a5.png)
+---
 ## <font color=blue>斜H阵</font>
 
 
@@ -132,6 +135,7 @@
   - 若 $B$ 是 skew-Hermit $\rightarrow$ $iB$ 与 $\displaystyle \frac{B}{i}$ 都是Hermit
   - 若 $A$ 是 Hermit $\rightarrow$ $iA$ 与 $\displaystyle \frac{A}{i}$ 都是Skew-Hermit
   - $A$ 是 Hermit $\Leftrightarrow$ $iA$ 是 Skew-Hermit
+---
 ## <font color=blue>正交阵</font>
 
 
@@ -148,6 +152,7 @@
     - $A$的<strong>所有特征值的模值为</strong><strong>$1$</strong>
     - 且存在酉矩阵$U$使得 <font color=red>$U^HAU=diag(λ_1,⋯,λ_n)$</font>
       >其中$λ_1,⋯,λ_n$是A的n个特征值
+---
 ## <font color=blue>优阵（U阵）</font>
 
 
@@ -179,6 +184,7 @@
   - U阵的任一行（列）同时乘以模为1的任何数后，得到的新矩阵仍为U阵
   - U阵的乘积仍为U阵
   - $A$ 所有特征值的模值为1，行列式的模值为1
+---
 ## <font color=blue>正规阵</font>
 
 
@@ -203,6 +209,7 @@
   - 正规阵A恰有n个正交的特征向量
 - 严格三角阵（非对角形）一定不是正规阵
 - <font color=green>引理</font>—$\text{若分块阵 }A=\begin{pmatrix}B&C\\0&D\end{pmatrix}\text{正规，则 }C=0\text{，且 }B,D\text{ 都正规，即 }A=\begin{pmatrix}B&0\\0&D\end{pmatrix}$
+---
 ## <font color=blue>度量矩阵</font>
 
 
@@ -225,6 +232,7 @@
     - 即存在非奇异矩阵（可逆矩阵） $P$ 使得
     - $P^HG(ε_1,⋯,ε_n)P=G(ϵ_1,⋯,ϵ_n)$
     - $P$ 是由基 $ε_1,⋯,ε_n$ 到基$ϵ_1,⋯,ϵ_n$ 的过渡矩阵
+---
 ## <font color=blue>Householder矩阵</font>
 
 
@@ -240,12 +248,14 @@
     - $x^Hx=y^Hy\quad,x^Hy=y^Hx$
     - 此时可取 $\displaystyle w=\frac{e^{iθ}(x−y)}{‖x−y‖}$
       >其中θ为任一实数，实际求就取0
+---
 ## <font color=blue>奇异矩阵</font>
 
 
 
 - $|A|=0$
 - 没有逆矩阵
+---
 ## <font color=blue>λ矩阵</font>
 
 
@@ -362,6 +372,7 @@
   - 可先将λ矩阵作初等变换，使得变换后的矩阵为对角（块）矩阵
   - 利用定理求出λ矩阵的初等因子，进而求出Smith标准形和不变因子
     >设$λ$矩阵$A(λ)$为对角块矩阵（定理）
+---
 ## <font color=blue>单纯阵</font>
 
 
@@ -379,6 +390,7 @@
     - 若复方阵A的<font color=blue>零化多项式</font> $g(λ)$ <u>无重根</u>，$\Rightarrow$则矩阵A是单纯矩阵
     - 若复方阵是<font color=green>幂等阵</font>，则一定可以对角化
       - - ![](https://api2.mubu.com/v3/document_image/21954114_fa163e0c-e526-4819-9319-0b810a355e4e.png)
+---
 ## <font color=blue>幂零阵、幂等阵</font>
 
 
@@ -415,6 +427,7 @@
 
 # <font color=purple>重要概念</font>
 
+---
 ## <font color=blue>共轭</font><font color=codespan>Conjugate</font>
 
 
@@ -428,6 +441,7 @@
     - $\overline{A}=(\overline{a_{i,j}})=(a_{i,j})=A$
   - $\text{对于任意 } A=A_{m\times n}\in\mathbb{C}^{m,n}, B=B_{m\times p}\in\mathbb{C}^{n,p}$
     - $\overline{(AB)}=(\overline{A})(\overline{B})\quad$
+---
 ## <font color=blue>共轭转置=转置共轭</font>
 
 
@@ -439,11 +453,13 @@
   - $(kA)^H=\overline{k}(A^H)$
     >$k\in C$ （复数）
   - $(ABC)^H=C^HB^HA^H$
+---
 ## <font color=blue>矩阵的模/范数</font>
 
 
 
 - $||A||=\sqrt{\sum|a_{i,j}|^{2}}$
+---
 ## <font color=blue>向量的模</font>
 
 
@@ -453,6 +469,7 @@
   >$∀x,y∈V$ 和 $k∈F$
   - - ![](https://api2.mubu.com/v3/document_image/21954114_87832f43-354c-4aef-d98c-472cddd2fdf0.png)
     - ![](https://api2.mubu.com/v3/document_image/21954114_5d8b4113-7b63-4f91-8308-063542f33ccf.png)
+---
 ## <font color=blue>迹</font>
 
 
@@ -477,11 +494,13 @@
       >$\mathrm{~for~}X,Y\in\mathbb{C}^{\mathrm{n}}$
       - - ![](https://api2.mubu.com/v3/document_image/6cdb49a6-ac88-4312-9e5e-8107fbe14821-21954114.jpg)
       - - ![](https://api2.mubu.com/v3/document_image/ab05e461-6d2a-4a0e-84c4-f35e5a0c8cbc-21954114.jpg)
+---
 ## <font color=blue>全体特征根</font>
 
 
 
 - $\lambda(A)=\{\lambda_1,\ldots,\lambda_n\}$
+---
 ## <font color=blue>特征值</font>
 
 
@@ -508,6 +527,7 @@
     - 复方阵某一特征值的代数重数为1，则它的几何重数必为1
     - 示例
       - ![](https://api2.mubu.com/v3/document_image/21954114_6a0c897e-c82b-412b-a7b4-3abb0e67f9b2.png)
+---
 ## <font color=blue>右逆、左逆</font>
 
 
@@ -516,6 +536,7 @@
   - A为<strong>行满秩</strong>矩阵
 - A有<strong>左逆</strong> 的充要条件（即存在矩阵B使得$BA= I$）
   - A为<strong>列满秩</strong>矩阵
+---
 ## <font color=blue>内积</font><font color=codespan>Inner product</font>
 
 
@@ -565,6 +586,7 @@
   - $\begin{aligned}A&=\begin{pmatrix}a_{11}&\cdots&a_{1p}\\\vdots&\ddots&\vdots\\a_{n1}&\cdots&a_{np}\end{pmatrix}\in C^{n\times p}\\&=(\alpha_1,\cdots,\alpha_p),\text{其中}\alpha_i\text{为}n\text{维列向量}(n\times1\text{阶矩阵})\end{aligned}$
   - $\begin{aligned}A^{H}& =\begin{pmatrix}\overline{a_{11}}&&\cdots&&\overline{a_{n1}}\\\vdots&&\ddots&&\vdots\\\overline{a_{1p}}&&\cdots&&\overline{a_{np}}\end{pmatrix} \in C^{p\times n} \\&=\begin{pmatrix}\overline{\alpha_1}^T\\\vdots\\\overline{\alpha_p}^T\end{pmatrix}\text{,其中}\overline{\alpha_1}^T\text{是}n\text{维行向量}1\times n\text{阶矩阵}\end{aligned}$
   - $\begin{aligned}A^{H}A& =\begin{pmatrix}\overline{\alpha_1}^T\\\vdots\\\overline{\alpha_p}^T\end{pmatrix}(\alpha_1,\cdots,\alpha_p) \\&=\begin{pmatrix}\overline{\alpha_1}^T\alpha_1&&\overline{\alpha_1}^T\alpha_2&&\cdots&\overline{\alpha_1}^T\alpha_p\\\overline{\alpha_2}^T\alpha_1&&\overline{\alpha_2}^T\alpha_2&&\cdots&\overline{\alpha_2}^T\alpha_p\\\vdots&&\vdots&&\ddots&\vdots\\\overline{\alpha_p}^T\alpha_1&&\overline{\alpha_p}^T\alpha_2&&\cdots&\overline{\alpha_p}^T\alpha_p\end{pmatrix} \\&=\begin{pmatrix}(\alpha_1,\alpha_1)&&(\alpha_2,\alpha_1)&&\cdots&&(\alpha_p,\alpha_1)\\(\alpha_1,\alpha_2)&&(\alpha_2,\alpha_2)&&\cdots&&(\alpha_p,\alpha_2)\\\vdots&&\vdots&&\ddots&&\vdots\\(\alpha_1,\alpha_p)&&(\alpha_2,\alpha_p)&&\cdots&&(\alpha_p,\alpha_p)\end{pmatrix} \\&=\begin{pmatrix}\overline{(\alpha_1,\alpha_1)}&&\overline{(\alpha_1,\alpha_2)}&&\cdots&&\overline{(\alpha_1,\alpha_p)}\\\overline{(\alpha_2,\alpha_1)}&&\overline{(\alpha_2,\alpha_2)}&&\cdots&&\overline{(\alpha_2,\alpha_p)}\\\vdots&&\vdots&&\ddots&&\vdots\\\overline{(\alpha_p,\alpha_1)}&&\frac{\vdots}{(\alpha_p,\alpha_2)}&&\cdots&&\overline{(\alpha_p,\alpha_p)}\end{pmatrix} \\&==\begin{pmatrix}|\alpha_1|^2&\overline{(\alpha_1,\alpha_2)}&\cdots&\overline{(\alpha_1,\alpha_p)}\\\overline{(\alpha_2,\alpha_1)}&|\alpha_2|^2&\cdots&\overline{(\alpha_2,\alpha_p)}\\\vdots&\vdots&\ddots&\vdots\\\overline{(\alpha_p,\alpha_1)}&\overline{(\alpha_p,\alpha_2)}&\cdots&|\alpha_\text{p}|^2\end{pmatrix}\end{aligned}$
+---
 ## <font color=blue>正交</font><font color=codespan>orthogonal</font>
 
 
@@ -599,6 +621,7 @@
 - 在 $n$ 维内积空间中，正交向量组中的向量个数不会超过n个
 - 拓展
   - ![](https://api2.mubu.com/v3/document_image/21954114_72b9b71b-8d0a-40b5-f894-754fbac171ba.png)
+---
 ## <font color=blue>矩阵合同</font>
 
 
@@ -610,6 +633,7 @@
 
 - <mark>对 称 性</mark> : $A\triangleq B\Longleftrightarrow B\triangleq A$
 - <mark>传 递 性</mark> : $A\triangleq B， B\triangleq C\Longleftrightarrow A\triangleq C$
+---
 ## <font color=blue>矩阵相似</font>
 
 
@@ -617,6 +641,7 @@
 - <font color=green>定义</font>
 - <font color=green>tips</font>
   - 两矩阵相似的<mark>充分必要条件</mark>是两矩阵的<strong>特征矩阵等价（or 相抵）</strong>
+---
 ## <font color=blue>矩阵的秩</font>
 
 
@@ -626,6 +651,7 @@
 - <strong>补充性质</strong>
   - 一些结论
     - ![](https://api2.mubu.com/v3/document_image/21954114_122e0801-1bfd-4fec-fa55-a0600b62c588.png)
+---
 ## <font color=blue>零化多项式</font>
 
 
@@ -642,6 +668,7 @@
 
 
 - 复方阵A的零化多项式有无数个，A阵特征多项式的所有倍式都是A阵的零化多项式
+---
 ## <font color=blue>首1多项式</font>
 
 
@@ -651,6 +678,7 @@
 - $n$ 称为 $g(λ)$ 的次数，记为 <font color=red>$deg\big(g(λ)\big)=n$</font>
 - $a_n$ 称为 $g(λ)$ 的首项系数
 - 若<font color=red> </font><font color=red>$a_n=1$</font>，则称 $g(λ)$ 为<mark>首1多项式</mark>
+---
 ## <font color=blue>最小多项式</font>
 
 
@@ -668,6 +696,7 @@
 - 矩阵A的最小多项式$m_A(λ)$是唯一的，且可整除矩阵A的任一零化多项式
   - 特别的 $m_A(λ) | f_A(λ)$
 - 矩阵A的特征多项式$f_A(λ)$与最小多项式$m_A(λ)$具有<strong>相同的根（不计重数）</strong>
+---
 ## <font color=blue>Jordan块</font>参考
 
 
@@ -723,6 +752,7 @@
     - J 的<strong>最小多项式</strong>等于特征矩阵 $\rm \lambda I-A$ 的初等因子的最小公倍数，恰为<strong>不变因子</strong>$\rm d_n(\lambda)$
   - <font color=tag>例子</font>
     - - ![](https://api2.mubu.com/v3/document_image/21954114_5993e512-568e-4676-8f9e-f6309370d450.png)
+---
 ## <font color=blue>映射、变换</font>
 
 
@@ -883,6 +913,7 @@
 
 # <font color=purple>重要公式、定理</font>
 
+---
 ## <font color=blue>许尔公式</font>
 
 
@@ -907,6 +938,7 @@
     - 求出A的全部相异特征值及重数
     - 对于每个特征值 $λ$，求方程$(λI−A)x=0$的一个基础解系，并将其单位正交化处理
     - 由标准正交特征向量生成酉矩阵$Q$，则$Q^TAQ$是对角矩阵
+---
 ## <font color=blue>换位公式</font>
 
 
@@ -915,12 +947,14 @@
 - - ![](https://api2.mubu.com/v3/document_image/21954114_d1ff572c-9ade-486a-8551-8aaa1a03f551.png)
 - - ![](https://api2.mubu.com/v3/document_image/21954114_e7f5d0c0-6162-4fd5-9188-f6c2aa5ceb93.png)
 - - ![](https://api2.mubu.com/v3/document_image/21954114_bbb0e451-0403-49ee-a86d-885499c2a268.png)
+---
 ## <font color=blue>特商公式</font>
 
 
 
 - $\displaystyle\lambda=\frac{X^HAX}{|X|^2},\text{其中}(X\neq0\text{为}\lambda\text{的一个特征向量})$
   - $\text{证明}:X^HAX=X^H\lambda X=\lambda X^HX=\lambda|X|^2(|X|^2>0)$
+---
 ## <font color=blue>平方公式</font>
 
 
@@ -928,11 +962,13 @@
 - <mark>若 </mark>$A$ 为半正定（$A\ge 0$），或 $A$ 为正定（$A>0$）
 - <mark>则有</mark>分解 $A=B^2$，且 $B^H=B$ 为<mark> </mark><mark>$Hermite$</mark><mark> 半正定</mark>（$B\ge0$）
 - $B$ 叫 $A$ 的平方根，记作 $\displaystyle B=\sqrt{A}=A^{\frac12}$
+---
 ## <font color=blue>秩公式</font>
 
 
 
 - $r(AA^H)=r(A^HA)=r(A)$
+---
 ## <font color=blue>亏加秩定理</font>
 
 
@@ -940,6 +976,7 @@
 - 设 $T∈L(V,W)$
 - <font color=red>$\rm dimN(T)+dimR(T)=dimV$</font>
 - 即线性映射 $T$ 的亏加秩等于其定义域 $V$ 空间的维数
+---
 ## <font color=codespan>Cayley</font><font color=blue>定理</font>
 
 
@@ -949,6 +986,7 @@
   - 若$A\in C^{n\times n}$，则$A^n$一定可以由$A^{n-1},\cdots,A,I$线性表示，其中$n\geqslant2。$
 - 例题
   - - ![](https://api2.mubu.com/v3/document_image/21954114_6a512604-ef08-41ef-abb6-e741a72e2681.png)
+---
 ## <font color=codespan>Cauchy—Schwarz</font><font color=blue>不等式</font>
 
 
@@ -961,6 +999,7 @@
   >定义不同内积可得到不同的Cauchy不等式
   - 对 $ℝ^n$ 中任两向量 <mark>$x=[x_1,⋯,x_n]^T$</mark>和 <mark>$y=[y_1,⋯,y_n]^T$</mark>
     - $\displaystyle \left|\sum_{i=1}^nx_iy_i\right|\leq\sqrt{\sum_{i=1}^nx_i^2}\sqrt{\sum_{i=1}^ny_i^2}$
+---
 ## <font color=codespan>Holder</font><font color=blue>不等式</font>
 
 
@@ -968,6 +1007,7 @@
 - $\forall x=[x_1,x_2,\cdots,x_n]^T \in \Bbb C^n，y=[y_1,y_2,\cdots,y_n]^T \in \Bbb C^n$
 - 设 <mark>$p,q>1$</mark>，且<mark>$\displaystyle \frac1p + \frac1q=1$</mark>
 - <font color=red>$\displaystyle \sum_{i=1}^n|x_iy_i|\le \bigg(\sum_{i=1}^n |x_i|^p\bigg)^{\frac1p}\bigg(\sum_{i=1}^n |y_i|^q\bigg)^{\frac1q}$</font>
+---
 ## <font color=codespan>Minkowski</font><font color=blue>不等式</font>
 
 
