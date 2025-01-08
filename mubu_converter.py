@@ -30,7 +30,7 @@ class MubuConverter:
             annotation_tag = latex_tag.find("annotation")
             if annotation_tag and annotation_tag.string:
                 latex_content = annotation_tag.string.strip()
-                latex_tag.string = f'${latex_content}$'  # 添加美元符号用于 LaTeX 表达式
+                latex_tag.string = f'${latex_content}$'  
             else:
                 data_raw = latex_tag.get('data-raw', '').strip()
                 if data_raw:
@@ -43,6 +43,10 @@ class MubuConverter:
         for note_tag in soup.find_all("div", class_="note mm-editor"):
             note_tag.insert_before(">")  # 插入引用符号，可以正常显示描述区的公式
     
+        # 处理行内代码
+        for code_tag in soup.find_all('span', class_='codespan'):
+            code_tag.insert_before("`")  
+            code_tag.insert_after("`")
         
         # 处理粗体、下划线和高亮样式
         for bold_tag in soup.find_all(class_='bold'):
@@ -66,15 +70,20 @@ class MubuConverter:
             else:
                 color_tag.insert_before(f"<font color={color_code}>")  # 插入颜色标签
                 color_tag.insert_after("</font>")
+                
+        # 移除class="tag"的文本的#号
+        for tag_tag in soup.find_all("span", class_="tag"):
+            # 移除#号
+            tag_tag.string = tag_tag.string.replace("#", "", 1)
 
-        # 整理图片标签
+        # 处理图片
         for img_tag in soup.find_all("img"):
-            print(f"发现图片: {img_tag}")
             img_src = img_tag.get('src')
-            # 变成 Markdown 的图片标签
-            img_tag.name = "img"
-            img_tag.insert_before(f"![]({img_src})")
+            markdown_img_tag = f"![]({img_src})"
+            # 插入imgtag的父标签之前
+            img_tag.parent.insert_before(markdown_img_tag)
             img_tag.decompose()
+
 
         # 处理 h1 标题
         for heading1_tag in soup.find_all("li", class_="node heading1"):
@@ -121,7 +130,7 @@ class MubuConverter:
         for tag_tag in soup.find_all("span", class_="tag"):
             tag_tag.string = tag_tag.string.replace("#", "", 1)
 
-
+                
         # 删除 "以上内容整理于 幕布文档"
         publish_tag = soup.find("div", attrs={"class": "publish"})
         if type(publish_tag) is Tag:

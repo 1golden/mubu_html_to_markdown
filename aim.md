@@ -7,7 +7,7 @@
 
 
 
->Hermite matrix
+>`Hermite matrix`
 
 ### <font color=green>定义</font>
 
@@ -28,60 +28,58 @@
 
 
 
-- 主对角线元素对角元为实数
+- 主对角线元素`对角元`为实数
   - $A=\begin{pmatrix}a_{11}&&&*\\&a_{22}&&\\&&\ddots&\\*&&&a_{nn}\end{pmatrix}A^H=\begin{pmatrix}\overline{a_{11}}&&&*\\&\overline{a_{22}}&&\\&&\ddots&\\*&&&\overline{a_{nn}}\end{pmatrix}$
 - $A$ 有 $n$ 个互相正交的特征向量，即 $X_1\bot X_2\bot...\bot X_n$
   >$A$ 的不同特征值所对应的特征向量是相互正交的
   - proof
-    - ![](https://api2.mubu.com/v3/document_image/21954114_47c562e0-65dd-4f49-de96-01d9083a624b.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_47c562e0-65dd-4f49-de96-01d9083a624b.png)
 - $a_{i,j}=\overline{a_{j,i}}$
-  >$1\leq i,j\leq n $
-- 任何<mark>实对称矩阵</mark>是Hermite矩阵
+  >$1\leq i,j\leq n$
+- 任何<mark>实对称矩阵</mark>是`Hermite`矩阵
 - 每个<font color=red>$H$</font><font color=red>阵</font>$A$ <mark>优相似于对角阵</mark>
   - 存在U阵 $Q$ 使 <font color=red>$Q^{-1}AQ=Q^HAQ=\Lambda=\begin{pmatrix}\lambda_1&&\\&\ddots&\\&&\lambda_n\end{pmatrix}\\ A=Q\Lambda Q^{-1}=Q\Lambda Q^H$</font>，且 $\lambda(A)\in R$
     - proof
-      - ![](https://api2.mubu.com/v3/document_image/21954114_75076d8d-7ce5-4964-bb3f-bf6dea24e641.png)
+      ![](https://api2.mubu.com/v3/document_image/21954114_75076d8d-7ce5-4964-bb3f-bf6dea24e641.png)
 - <mark>特征根都是实数</mark>，$\{\lambda_1,\cdots,\lambda_n\}\in R$
   - proof
-    - ![](https://api2.mubu.com/v3/document_image/21954114_b320c4bf-9edf-44f1-c71d-6c702fb479ab.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_b320c4bf-9edf-44f1-c71d-6c702fb479ab.png)
 - 对正整数 $k$，$A^k$ 也是 $H$ 阵
 - 若 $A$ 可逆，$A^{-1}$ 也是 $H$ 阵
 - 对实数 $k , p$ ，$k A + p B$ 也是Hermite矩阵
   >(A , B为n 阶Hermite矩阵)
-- 任一复方阵都可以唯一地表示成Hermite矩阵和反Hermite矩阵之和
-  - proof
-    - ![](https://api2.mubu.com/v3/document_image/21954114_a5e01d75-db2d-4baa-c3f4-2698d477a3ff.png)
+- 任一复方阵都可以<strong>唯一</strong>地表示成Hermite矩阵和反Hermite矩阵之和
 ### <font color=green>乘积形式的H阵性质</font>
 
 
 
-- 对一切矩阵$A=A_{n\times p}$ 且 $n\geq p$ ，$A^HA$与$AA^H$都是Hermite阵
+- 对一切矩阵$A=A_{n\times p}$ 且 $n\geq p$ ，$A^HA$与$AA^H$都是`Hermite`阵
   - proof
-    - ![](https://api2.mubu.com/v3/document_image/21954114_7ba61f5c-9ffc-4ab6-d3b2-c7adaff2516f.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_7ba61f5c-9ffc-4ab6-d3b2-c7adaff2516f.png)
 - $AA^H$ 矩阵的迹
   - $A_{n\times p}=\begin{pmatrix}a_{11}&\cdots&a_{1p}\\\vdots&\ddots&\vdots\\a_{n1}&\cdots&a_{np}\end{pmatrix}\in C^{n\times p}\\ A_{p\times n}^H=\begin{pmatrix}\overline{a_{11}}&\cdots&\overline{a_{n1}}\\\vdots&\ddots&\vdots\\\overline{a_{1p}}&\cdots&\overline{a_{np}}\end{pmatrix}\in C^{p\times n}$
-  - $\displaystyle tr(A^HA)=tr(AA^H)=\sum\limits_{i=1,j=1}^n{|a_{ij}|^2}$
+  - <font color=red>$\displaystyle tr(A^HA)=tr(AA^H)=\sum\limits_{i=1,j=1}^n{|a_{ij}|^2}$</font>
   - <strong>推论</strong>
     - $tr(AB^H)=tr(B^HA)=\sum a_{ij}\overline{b_{ij}}$
 - $A^HA$ 与 $AA^H$只相差 $n-p$ 个 0 根
   - proof
-    - ![](https://api2.mubu.com/v3/document_image/21954114_456a6946-33e1-4c54-8b93-5635b7dc5b50.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_456a6946-33e1-4c54-8b93-5635b7dc5b50.png)
 - $A^HA$ 与 $AA^H$ 是<strong>半正定阵</strong>
   - proof
-    - ![](https://api2.mubu.com/v3/document_image/21954114_6c98f7d6-2751-4613-ee5f-1247e7978663.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_6c98f7d6-2751-4613-ee5f-1247e7978663.png)
 - $r(AA^H)=r(A^HA)=r(A)=r(A^H)$
   - proof 1
-    - ![](https://api2.mubu.com/v3/document_image/21954114_625102e6-be5d-4ae6-b7cf-4d8668b4e94d.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_625102e6-be5d-4ae6-b7cf-4d8668b4e94d.png)
   - proof 2——只需证$A^HAX= 0$ 的解也是 $AX=0$ 的解
-    - ![](https://api2.mubu.com/v3/document_image/21954114_f0969394-dba4-4830-a01a-61a838edf46d.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_f0969394-dba4-4830-a01a-61a838edf46d.png)
 ---
 ## <font color=blue>二次型、正定阵</font>
 
 
 
->参考来源 [csdn](https://blog.csdn.net/hzf0701/article/details/134824086)
+>`参考来源` [csdn](https://blog.csdn.net/hzf0701/article/details/134824086)
 
-### Hermite<font color=green>二次型定义</font>
+### `Hermite`<font color=green>二次型定义</font>
 
 
 
@@ -94,20 +92,20 @@
 - 若$A^H=A$ ，对一切$X\neq0$ ，有$X^HAX>0$ ，则$f(x)=X^HAX$为<mark>正定二次型</mark>，$A$为<mark>正定阵</mark>，记为 $A>0$
 - 若$A^H=A$ ，对一切$X\neq0$ ，有$X^HAX\geq0$ ，则$f(x)=X^HAX$为<mark>半正定二次型</mark>，A为<mark>半正定阵</mark>，记为 $A\geq0$
 - <strong>补充定义</strong>
-  - ![](https://api2.mubu.com/v3/document_image/21954114_ed06eb89-6c17-4b0b-9559-3fcfdea2cdf1.png)
+  ![](https://api2.mubu.com/v3/document_image/21954114_ed06eb89-6c17-4b0b-9559-3fcfdea2cdf1.png)
 ### <font color=green>判定</font><font color=green>$n$</font><font color=green>阶Hermite矩阵</font><font color=green>$A$</font><font color=green>正定</font>
 
 
 
 - all
-  - ![](https://api2.mubu.com/v3/document_image/21954114_9ac3669d-614f-407d-f362-05549e35cb18.png)
+  ![](https://api2.mubu.com/v3/document_image/21954114_9ac3669d-614f-407d-f362-05549e35cb18.png)
 ### <font color=green>正定阵定理</font>
 
 
 
 - <font color=red>$A>0\Longleftrightarrow A$</font><font color=red>为Hermite阵，且</font><font color=red>$\lambda_1,\lambda_2,\cdots,\lambda_n>0$</font>
   - proof
-    - ![](https://api2.mubu.com/v3/document_image/21954114_e18ba551-1d01-4828-9864-b892facf5c7c.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_e18ba551-1d01-4828-9864-b892facf5c7c.png)
 - <font color=red> </font><font color=red>$A\geq0\iff A$</font><font color=red>为Hermite阵，且</font><font color=red>$\lambda_1,\lambda_2,\cdots,\lambda_n\geq0$</font>
 - <mark>单位阵是正定阵</mark>
 - <mark>正定阵间必合同</mark>
@@ -115,26 +113,26 @@
   - $\Lambda \triangleq I$
   - 若 $A,B$ 为同阶正定阵，则 $A \triangleq B$
   - proof
-    - ![](https://api2.mubu.com/v3/document_image/21954114_dff8a744-3754-48b0-dc7d-d5fc47a3d3f0.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_dff8a744-3754-48b0-dc7d-d5fc47a3d3f0.png)
 ### <strong>补充</strong>
 
 
 
 - 实正定阵的重要结论
-  - ![](https://api2.mubu.com/v3/document_image/21954114_51def1d6-93b6-474f-a962-27c58d20e1a5.png)
+  ![](https://api2.mubu.com/v3/document_image/21954114_51def1d6-93b6-474f-a962-27c58d20e1a5.png)
 ---
 ## <font color=blue>斜H阵</font>
 
 
 
->Skew-Hermit
+>`Skew-Hermit`
 
 - $A^H=-A$
 - <mark>性质</mark>
   - 对角元为纯虚数
-  - 若 $B$ 是 skew-Hermit $\rightarrow$ $iB$ 与 $\displaystyle \frac{B}{i}$ 都是Hermit
-  - 若 $A$ 是 Hermit $\rightarrow$ $iA$ 与 $\displaystyle \frac{A}{i}$ 都是Skew-Hermit
-  - $A$ 是 Hermit $\Leftrightarrow$ $iA$ 是 Skew-Hermit
+  - 若 $B$ 是 `skew-Hermit` $\rightarrow$ $iB$ 与 $\displaystyle \frac{B}{i}$ 都是`Hermit`
+  - 若 $A$ 是 `Hermit` $\rightarrow$ $iA$ 与 $\displaystyle \frac{A}{i}$ 都是`Skew-Hermit`
+  - $A$ 是 `Hermit` $\Leftrightarrow$ $iA$ 是 `Skew-Hermit`
 ---
 ## <font color=blue>正交阵</font>
 
@@ -165,6 +163,10 @@
   - <font color=red>$A=A^{n\times n} 是 U阵 \\ \Leftrightarrow A^{H} A=I_{\mathrm{n}} \\ \Leftrightarrow A^{-1}=A^{H} \\ \Leftrightarrow AA^{H}=I_{\mathrm{n}}$</font>
     >$\because AA^{-1}=I$
     - 注意：U阵必可逆
+  - $n$阶复方阵$A$是U阵<u>当且仅当</u>
+    - $A$的<strong>所有特征值的模值为</strong><strong>$1$</strong>
+    - 且存在酉矩阵$U$使得 <font color=red>$U^HAU=diag(λ_1,⋯,λ_n)$</font>
+      >其中$λ_1,⋯,λ_n$是A的n个特征值
 - <mark>性质</mark>
   >如果 A 是U阵
   - 如果 $A_{n,n}和B_{n,n}$ 是U阵 $\Rightarrow$ $AB$是U阵
@@ -172,14 +174,10 @@
   - $k=\pm1,kA=(k\alpha_1,k\alpha_2,\cdots,k\alpha_n)\text{ 为优阵}$
   - $B=(\beta_1,\beta_2,\cdots,\beta_n)$为优阵，其中$\beta\text{ 组为 }\alpha\text{ 组的重排}$
   - $|Ax|^2=|x|^2$
-    - ![](https://api2.mubu.com/v3/document_image/ab81598e-2cf4-420a-be0e-01a78666e299-21954114.jpg)
+    ![](https://api2.mubu.com/v3/document_image/ab81598e-2cf4-420a-be0e-01a78666e299-21954114.jpg)
   - $x\bot y\Rightarrow Ax\bot Ay$
-    - ![](https://api2.mubu.com/v3/document_image/c235ea90-ad61-4a9c-98c1-0b60ca48e31e-21954114.jpg)
+    ![](https://api2.mubu.com/v3/document_image/c235ea90-ad61-4a9c-98c1-0b60ca48e31e-21954114.jpg)
   - $(Ax,Ay)=(x,y)$
-  - $n$阶复方阵$A$是U阵<u>当且仅当</u>
-    - $A$的<strong>所有特征值的模值为</strong><strong>$1$</strong>
-    - 且存在酉矩阵$U$使得 <font color=red>$U^HAU=diag(λ_1,⋯,λ_n)$</font>
-      >其中$λ_1,⋯,λ_n$是A的n个特征值
 - <mark>拓展性质</mark>
   - U阵的任一行（列）同时乘以模为1的任何数后，得到的新矩阵仍为U阵
   - U阵的乘积仍为U阵
@@ -194,37 +192,43 @@
 - <font color=green>判定</font>
   - <font color=blue>H 阵 </font>、<font color=blue>斜H阵</font>、<font color=blue>正交阵</font>、（包含实正交阵）都是正规阵
   - <strong>对角阵</strong>一定是正规阵
+  - 严格三角阵（非对角形）一定不是正规阵
   - <strong>实对称</strong>与<strong>实反对称阵</strong>都正规
-  - 复方阵 $A$ 是正规矩阵 当且仅当 $A$ 有 $n$ 个<strong>特征向量</strong>构成$\Bbb C^n$ 空间的<strong>一组标准正交基</strong>，且属于 $A$的<strong>不同特征值的特征向量</strong><strong><u>正交</u></strong>
-  - 复方阵 $A$ 是正规矩阵 当且仅当 $A$ <mark><u>酉相似于对角阵</u></mark>
+  - 复方阵 $A$ 是正规矩阵 <mark>当且仅当</mark> $A$ 有 $n$ 个<strong>特征向量</strong>构成$\Bbb C^n$ 空间的<strong>一组标准正交基</strong>，且属于 $A$的<strong>不同特征值的特征向量</strong><strong><u>正交</u></strong>
+  - 复方阵 $A$ 是正规矩阵 <mark>当且仅当</mark> $A$ <u><font color=underline>酉相似于对角阵</font></u>
   - $n$阶方阵$A$正规的<u>充分必要条件</u>是它与一个具有互异的特征值且与$A$有相同的特征向量的矩阵$B$可交换(即$AB=BA$)
+  - 若两个正规矩阵可交换，则它们的乘积也是正规矩阵
+    - proof
+      ![](https://api2.mubu.com/v3/document_image/21954114_06e0762d-346f-464d-dccc-304938a03129.png)
 - <font color=green>性质</font>
   - 若$A$正规，则$kA＋cI$正规
   - 若$A$正规，则$A$与$A^H$必有相同特征向量
     - 即若$A$正规，且$AX＝cX$，则$A^HX＝\bar{c}X$
-  - 若$A$正规，则$Q^HAQ$也正规，其中$Q$为优阵（$QQ^H＝I$）
+  - 若$A$正规，则$Q^HAQ$也正规，其中$Q$为U阵（$QQ^H＝I$）
     >正规阵的优相似必正规
   - 若$A$正规，则任意多项式$f(A)＝λ_ 0 I+λ _1 A+λ _2 A ^2 +⋯+λ_nA^K$也正规
     >多项正规定理——正规阵的多项式也正规
-  - 正规阵A恰有n个正交的特征向量
-- 严格三角阵（非对角形）一定不是正规阵
-- <font color=green>引理</font>—$\text{若分块阵 }A=\begin{pmatrix}B&C\\0&D\end{pmatrix}\text{正规，则 }C=0\text{，且 }B,D\text{ 都正规，即 }A=\begin{pmatrix}B&0\\0&D\end{pmatrix}$
+  - 正规阵的奇异值为特征值的绝对值
+- <font color=green>易错</font>
+  - × 若A是正规矩阵，则A的特征向量必两两正交
+- <font color=green>引理</font>
+  - $\text{若分块阵 }A=\begin{pmatrix}B&C\\0&D\end{pmatrix}\text{正规，则 }C=0\text{，且 }B,D\text{ 都正规，即 }A=\begin{pmatrix}B&0\\0&D\end{pmatrix}$
 ---
 ## <font color=blue>度量矩阵</font>
 
 
 
->Gram Martrix
+>`Gram Martrix`
 
 - <font color=green>定义</font>
   - 设$ϵ_1,⋯,ϵ_n$是内积空间 $V$ 中的一组基，称n阶矩阵A 为$V$ 关于基 $ϵ_1,⋯,ϵ_n$ 的度量矩阵
-    - ![](https://api2.mubu.com/v3/document_image/21954114_376d9da9-7e0c-4514-dda6-8c28ae613170.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_376d9da9-7e0c-4514-dda6-8c28ae613170.png)
   - 记为 <font color=red>$G(ϵ_1,⋯,ϵ_n)$</font>
 - <font color=green>tips</font>
   - 内积空间中内积与度量矩阵是一一对应的
   - <font color=red>$(x,y)=η^HA^Hξ$</font>
     - 设 $ϵ_1,⋯,ϵ_n$ 是内积空间V的一组基，则 $∀x,y∈V$,有
-      - ![](https://api2.mubu.com/v3/document_image/21954114_d1334d12-5a51-43f6-9053-0b6c515803cf.png)
+      ![](https://api2.mubu.com/v3/document_image/21954114_d1334d12-5a51-43f6-9053-0b6c515803cf.png)
 - <font color=green>性质</font>
   >设 $G(ε_1,⋯,ε_n)$ 和$G(ϵ_1,⋯,ϵ_n)$ 均为内积空间 $V$ 的度量矩阵
   - $G(ε_1,⋯,ε_n)$ 和 $G(ϵ_1,⋯,ϵ_n)$ 是<strong>正定Hermite矩阵</strong>
@@ -248,6 +252,7 @@
     - $x^Hx=y^Hy\quad,x^Hy=y^Hx$
     - 此时可取 $\displaystyle w=\frac{e^{iθ}(x−y)}{‖x−y‖}$
       >其中θ为任一实数，实际求就取0
+  - 一定可以酉相似对角化
 ---
 ## <font color=blue>奇异矩阵</font>
 
@@ -264,45 +269,45 @@
 
 
 
-- 以 <strong>λ多项式</strong> 为元素的矩阵称为$\lambda$矩阵，记为A(λ)
+- 以 <strong>λ多项式</strong> 为元素的矩阵称为$\lambda$矩阵，记为`A(λ)`
   - <mark>$A(λ)=[a_{ij}(λ)]_{m×n}$</mark>
     >$a_{ij}(λ)∈P_n(λ)$
 ### <strong><font color=bold>λ矩阵的秩</font></strong>
 
 
 
-- 矩阵$A(λ)$中<strong><u>非零子式的最高阶数r</u></strong> 定义为$A(λ)$的秩，记为rank(A(λ))=r
+- 矩阵$A(λ)$中<strong><u>非零子式的最高阶数r</u></strong> 定义为$A(λ)$的秩，记为`rank(A(λ))=r`
 - 例子
-  - ![](https://api2.mubu.com/v3/document_image/21954114_81336d7f-e5a5-482e-b7fb-c838996a23b9.png)
+  ![](https://api2.mubu.com/v3/document_image/21954114_81336d7f-e5a5-482e-b7fb-c838996a23b9.png)
 ### <strong><font color=bold>λ矩阵相抵</font></strong>
 
 
 
 - <mark>定义</mark>
   - 若$\lambda$矩阵$A(\lambda)$经过<mark>有限次初等变换</mark>化为$B(\lambda)$，则称$A(\lambda)$与$B(\lambda)$<font color=red>相抵</font>
-    - 补充 <strong>$\lambda$</strong><strong>矩阵的初等变换</strong>
-      - ![](https://api2.mubu.com/v3/document_image/21954114_cf60ebf5-9784-4ff5-abb0-cfbf452f57e5.png)
+    - <strong>$\lambda$</strong><strong>矩阵的初等变换</strong>
+      ![](https://api2.mubu.com/v3/document_image/21954114_cf60ebf5-9784-4ff5-abb0-cfbf452f57e5.png)
   - 即存在<strong>可逆阵</strong> $P(\lambda)$ 和 $Q(\lambda)$，使得 <font color=red>$A(\lambda ) = P(\lambda)B(\lambda)Q(\lambda)$</font>
   - $A(λ)≅B(λ)$
-- <mark>性质</mark>
-  - $\lambda$矩阵<strong>相抵</strong>则其<strong>秩相同</strong>，反之则不然
-  - 相抵的$\lambda$矩阵具有<strong>相同的秩</strong>和<strong>相同的各阶行列式因子</strong>
+- <mark>判定</mark>
   - $\lambda$矩阵$A(\lambda)$与$B(\lambda)$相抵 的<mark>充要条件</mark>
     - <font color=red>or</font> 完全一致的<font color=green>不变因子</font>
       - 即Smith标准型相同
     - <font color=red>or </font>具有相同的<font color=green>各阶行列式因子</font>
       - <strong>行列式因子</strong>
-        >补充
-        - 设 $\lambda$ 矩阵 $A(\lambda)$ 的秩为 $r$，对于正整数 $1\le k\le r$，$A(\lambda)$ 的全部 $k$ 阶子式的<strong>首1最大公因式</strong>称为 $k$ 阶行列式因子，记作$D_k(\lambda)$
+        >注意：行列式因子的个数=$\lambda$矩阵的秩！
+        - 设 $\lambda$ 矩阵 $A(\lambda)$ 的秩为 $r$，对于正整数<font color=red> </font><font color=red>$1\le k\le r$</font>，$A(\lambda)$ 的全部 $k$ 阶子式的<strong>首1最大公因式</strong>称为 $k$ 阶行列式因子，记作$D_k(\lambda)$
         - 例子
-          - ![](https://api2.mubu.com/v3/document_image/21954114_c01ee1be-7a00-4d02-d39f-9a8d01e26758.png)
+          ![](https://api2.mubu.com/v3/document_image/21954114_c01ee1be-7a00-4d02-d39f-9a8d01e26758.png)
     - <font color=red>or</font> 完全一致的<font color=green>初等因子</font>，且 <font color=green>$rank\big (A(λ)\big)=rank\big(B(λ)\big)$</font>
+- <mark>性质</mark>
+  - $\lambda$矩阵<strong>相抵</strong>则其<strong>秩相同</strong>，反之则不然
+  - 相抵的$\lambda$矩阵具有<strong>相同的秩</strong>和<strong>相同的各阶行列式因子</strong>
   - 复方阵A和B<strong>相似</strong>当且仅当它们的<strong>特征矩阵相抵</strong>
     - 相似与相抵之间的关系
-      - ![](https://api2.mubu.com/v3/document_image/21954114_f94dc556-0da1-4575-f465-23e777e6293a.png)
-      - ![](https://api2.mubu.com/v3/document_image/21954114_1f7d7b7c-a585-4c38-d907-eee79c2df57d.png)
+      ![](https://api2.mubu.com/v3/document_image/21954114_f94dc556-0da1-4575-f465-23e777e6293a.png)
 - 例子
-  - - ![](https://api2.mubu.com/v3/document_image/21954114_1db6b363-f7bb-4321-9865-fab2771358fd.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_1db6b363-f7bb-4321-9865-fab2771358fd.png)
 ### <strong><font color=bold>λ矩阵的逆矩阵</font></strong>
 
 
@@ -311,7 +316,7 @@
   - 设 $A(λ)$ 是 $n$ 阶 $λ$ 方阵，若存在 $n$ 阶$λ$方阵$B(λ)$满足<font color=red>$A(λ)B(λ)=B(λ)A(λ)=I$</font> 则称λ矩阵A(λ)是可逆的，并称B(λ)为A(λ)的逆矩阵，记作<font color=red>$A(λ)^{−1}$</font>
 - <mark>判定</mark>
   - <font color=red>$\lambda$</font><font color=red>方阵</font><font color=red>$A(\lambda)$</font><strong><font color=bold>可逆</font></strong><font color=red>的</font><u><font color=underline>充分必要条件</font></u><font color=red>是其</font><strong><font color=bold>行列式</font></strong><strong><font color=bold>$|A(λ)|$</font></strong><strong><font color=bold>为非零常数</font></strong>
-    - ![](https://api2.mubu.com/v3/document_image/21954114_69ad8dda-9bc4-4c2c-f117-29e71fc5ea01.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_69ad8dda-9bc4-4c2c-f117-29e71fc5ea01.png)
 ### <strong><font color=bold>Smith标准形</font></strong>
 
 
@@ -319,20 +324,25 @@
 - <mark>定义</mark>
   - 设 $λ$ 矩阵 $A(\lambda)$ 的秩为 $r$
   - 此标准形为$A(\lambda)$的Smith标准形
-    - ![](https://api2.mubu.com/v3/document_image/21954114_7fd792fb-19e3-434c-b461-ae9f0d62d23c.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_7fd792fb-19e3-434c-b461-ae9f0d62d23c.png)
   - $d_i(λ)$ 是<font color=blue>首1多项式</font>，且 $d_i(λ)|d_{i+1}(λ)$
 - <mark>tips</mark>
   - $A(\lambda)$不一定是方阵，故Smith标准形<u>不一定是对角阵</u>
   - Smith标准形中<font color=green>不变因子</font>与<strong>行列式因子</strong>之间的关系
     - 重要
-      - ![](https://api2.mubu.com/v3/document_image/21954114_a79db914-b684-4b47-9e3d-cfb939b426b8.png)
+      ![](https://api2.mubu.com/v3/document_image/21954114_a79db914-b684-4b47-9e3d-cfb939b426b8.png)
   - $\lambda$矩阵的Smith标准形是<strong>唯一</strong>的
+- `<font color=codespan>Frobenious</font>`<mark>定理</mark>
+  - 设 $A∈ℂ^{n×n}$
+  - 其特征矩阵 $λI−A$ 的Smith标准形为 <font color=red>$\rm diag(d_1(λ),…,d_n(λ))$</font>
+  - 则 $A$ 的<strong>最小多项式</strong><font color=red>$m_A(λ)=d_n(λ)$</font>
+  - <mark>注</mark>：$\lambda I−A$的<strong>初等因子的最小公倍式</strong>即为矩阵$A$的最小多项式$m_A(\lambda)$
 - <font color=tag>例子</font>
   - 求Smith标准型
-    - ![](https://api2.mubu.com/v3/document_image/21954114_fb2526dc-56ff-4daf-fe73-d4cbb3db366f.png)
-    - ![](https://api2.mubu.com/v3/document_image/21954114_42b71ee8-c987-4445-e010-e939aab1110a.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_fb2526dc-56ff-4daf-fe73-d4cbb3db366f.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_42b71ee8-c987-4445-e010-e939aab1110a.png)
   - 求初等因子、不变因子、Smith标准型
-    - ![](https://api2.mubu.com/v3/document_image/21954114_15f27894-ade4-40b6-b118-22a08d706658.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_15f27894-ade4-40b6-b118-22a08d706658.png)
 ### <font color=green>不变因子</font>
 
 
@@ -343,35 +353,37 @@
 - <mark>tips</mark>
   - 初等变换不改变$\lambda$矩阵的不变因子
 - 例子
-  - - ![](https://api2.mubu.com/v3/document_image/21954114_cafc377d-3359-4655-f4ca-80031e3f788e.png)
-  - - ![](https://api2.mubu.com/v3/document_image/21954114_462f8b1b-36c1-4b36-ded3-e9369e0f2638.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_cafc377d-3359-4655-f4ca-80031e3f788e.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_462f8b1b-36c1-4b36-ded3-e9369e0f2638.png)
 ### <font color=green>初等因子</font>
 
 
 
 - <mark>定义</mark>
-  - - ![](https://api2.mubu.com/v3/document_image/21954114_255f8f31-cd66-4870-8690-8829c28d6b09.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_255f8f31-cd66-4870-8690-8829c28d6b09.png)
 - <font color=tag>例子</font>
   - <strong>注：初等因子组可能存在相同的因子</strong>
-    - ![](https://api2.mubu.com/v3/document_image/21954114_f715be59-c764-44e1-d06c-48004175799b.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_f715be59-c764-44e1-d06c-48004175799b.png)
 - <mark>tips</mark>
   - 初等变换不改变$A(\lambda)$的初等因子
   - 设$\lambda$矩阵$A(\lambda)$为对角块矩阵
     >即$A(λ)=diag(A_1(λ),⋯,A_s(λ))$
     - 则 $A_1(λ),⋯,A_s(λ)$ 初等因子的全体就是$A(λ)$ 的全部初等因子
+  - <font color=red>行列式</font><font color=red>$|\lambda I-A|$</font><font color=red> 等于全体初等因子的乘积</font>
 ### <font color=green>tips</font>
 
 
 
 - 数字矩阵是特殊的$\lambda$矩阵
 - 复方阵A的<strong>特征矩阵</strong> <font color=red>$λI−A$</font> 是$\lambda$矩阵
-  - $λI−A$ 总是满秩的
+  - <font color=red>$λI−A$</font><font color=red> 总是满秩的</font>
+  - <font color=red>行列式</font><font color=red>$|\lambda I-A|$</font><font color=red> 等于全体初等因子的乘积</font>
+  - <font color=red>行列式</font><font color=red>$|\lambda I-A|$</font><font color=red> 等于n阶行列式因子</font>
 - λ方阵$A(λ)$<strong>可逆</strong>的<u>充分必要条件</u>是其<strong>行列式</strong><strong>$|A(λ)|$</strong><strong>为非零常数</strong>
-  - - ![](https://api2.mubu.com/v3/document_image/21954114_9995b351-7c07-4d7f-85ff-7e77272a483a.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_9995b351-7c07-4d7f-85ff-7e77272a483a.png)
 - 在求λ矩阵的Smith标准形、不变因子或初等因子时
   - 可先将λ矩阵作初等变换，使得变换后的矩阵为对角（块）矩阵
-  - 利用定理求出λ矩阵的初等因子，进而求出Smith标准形和不变因子
-    >设$λ$矩阵$A(λ)$为对角块矩阵（定理）
+  - 利用[定理](https://mubu.com/app/edit/home/60ee0FTFmM0#o-JiIQAHMFiQ)求出λ矩阵的初等因子，进而求出Smith标准形和不变因子
 ---
 ## <font color=blue>单纯阵</font>
 
@@ -379,17 +391,17 @@
 
 - <mark>定义</mark>
   - 1
-    - ![](https://api2.mubu.com/v3/document_image/21954114_2da9613c-5d80-49db-8100-7c929aee6e7f.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_2da9613c-5d80-49db-8100-7c929aee6e7f.png)
   - 2
-    - ![](https://api2.mubu.com/v3/document_image/21954114_58dbab2b-4db5-43b3-cc32-4eb97fa32c61.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_58dbab2b-4db5-43b3-cc32-4eb97fa32c61.png)
 - <mark>性质</mark>
   - 方阵A是单纯矩阵的<strong>充分必要条件</strong>
-    - or $A$的特征矩阵 $λI−A$的<font color=green>初等因子</font>是<strong>一次</strong>的
-    - or $A$的特征矩阵 $λI−A$ 的<font color=green>不变因子</font><strong>无重根</strong>
+    - <font color=red>or</font> $A$的特征矩阵 $λI−A$的<font color=green>初等因子</font>是<strong>一次</strong>的
+    - <font color=red>or</font> $A$的特征矩阵 $λI−A$ 的<font color=green>不变因子</font><strong>无重根</strong>
   - <strong>充分条件</strong>
     - 若复方阵A的<font color=blue>零化多项式</font> $g(λ)$ <u>无重根</u>，$\Rightarrow$则矩阵A是单纯矩阵
     - 若复方阵是<font color=green>幂等阵</font>，则一定可以对角化
-      - - ![](https://api2.mubu.com/v3/document_image/21954114_fa163e0c-e526-4819-9319-0b810a355e4e.png)
+      - ![](https://api2.mubu.com/v3/document_image/21954114_fa163e0c-e526-4819-9319-0b810a355e4e.png)
 ---
 ## <font color=blue>幂零阵、幂等阵</font>
 
@@ -399,11 +411,18 @@
 
 
 
-- <font color=red>$A^k=0$</font>
-- 幂零阵的全体特征根为0
+- <mark>定义</mark>
+  - <font color=red>$A^k=0$</font>，$A \in \Bbb C^{n\times n}$
+- <mark>性质</mark>
+  - A的全体特征根为0
+  - $|A+I| =1$
+    - proof
+      ![](https://api2.mubu.com/v3/document_image/21954114_b18c5af5-1df6-49be-da84-e70afbddaf51.png)
 ### <font color=green>幂等阵</font>
 
 
+
+>也称 $A$ 为 投影矩阵
 
 - <mark>定义</mark>
   - $A∈ℂ^{n×n}$
@@ -412,23 +431,48 @@
   >$A\in \Bbb C^{n\times n}_r$ 为幂等阵
   - <font color=red>$A^H$</font>，<font color=red>$A^∗$</font> 和 <font color=red>$I−A$</font>都是幂等矩阵
   - A 为<strong>单纯阵</strong>且<strong>相似于对角阵</strong>$\Lambda = \begin{bmatrix} I_r & 0 \\ 0 & 0 \end{bmatrix}$
-    - ![](https://api2.mubu.com/v3/document_image/21954114_46743dd0-8e84-40e1-c29b-1ccc0b0b6490.png)
   - $\rm tr(A)=rank(A)$
-    - - ![](https://api2.mubu.com/v3/document_image/21954114_7bb21389-c221-43ea-f133-d6ce87749424.png)
+    - 幂等阵的特征值只能是或者0或1，$r$个1，$n-r$个0
+    - proof
+      ![](https://api2.mubu.com/v3/document_image/21954114_7bb21389-c221-43ea-f133-d6ce87749424.png)
   - $N(A)=R(I-A)$
     >充要条件
-    - - ![](https://api2.mubu.com/v3/document_image/21954114_645ff638-5e3e-4704-9572-df221506f2d8.png)
+    - ![](https://api2.mubu.com/v3/document_image/21954114_645ff638-5e3e-4704-9572-df221506f2d8.png)
   - $\mathbb C^n=N(A) \dot{+}R(A)$
   - $\mathbb C^n=N(A) \dot{+} N(A-I)$
   - $Ax=x$ $\iff$ $x∈R(A)$
     >其中 $x\in \Bbb C^n$
     - proof
-      - ![](https://api2.mubu.com/v3/document_image/21954114_c22f2169-5444-4427-c1de-47e7d82b9435.png)
+      ![](https://api2.mubu.com/v3/document_image/21954114_c22f2169-5444-4427-c1de-47e7d82b9435.png)
+  - $\displaystyle \rm e^{tA}=I+(e^t-1)A$
+- <mark>做题技巧</mark>
+  - 若$A，B，A-B$均为投影矩阵，则$AB=BA=B$
+    - proof 由$A^2=A，B^2=B，(A-B)^2=A-B\\ \Rightarrow 2B =AB+BA\\ \Rightarrow2AB=AB+ABA，2BA=ABA+BA\\ \Rightarrow AB=BA=B$
+---
+## <font color=blue>秩一矩阵</font>
+
+
+
+- $A=\alpha \beta^T$，$\rm rank(A)=1$
+- <font color=green>性质</font>
+  >设$A$ 为 $n$ 阶 秩一矩阵
+  - $A$ 的 $n$ 个特征值是 1，1 个特征值为$\rm tr(A)$
+  - $\rm tr(A) = \beta^T\alpha$
+  - $\rm tr(A) \neq0$ 时， $A$ 可以相似对角化
+  - $\rm A^k = tr(A)^{k-1} A$
+  - $\alpha$ 是 $A$ 的 $\rm tr(A)$ 特征值对应的的特征向量
+  - $|\lambda I-A| = \lambda^{n-1}[\lambda-tr(A)]$
+  - $m_{\lambda}(A) = \lambda [\lambda-tr(A)]$
+  - $A$ 的非零奇异值为 $\|\alpha\|_2 \|\beta\|_2$
+  - $\|A\|_2 = \|\alpha\|_2 \|\beta\|_2$
+    >矩阵的2范数即为最大奇异值
+  - $\|A\|_F = \|\alpha\|_2 \|\beta\|_2$
+  - 若$B$是秩为$m$的单纯矩阵，则$B$必可写成$m$个秩一矩阵之和
 
 # <font color=purple>重要概念</font>
 
 ---
-## <font color=blue>共轭</font><font color=codespan>Conjugate</font>
+## <font color=blue>共轭</font>`<font color=codespan>Conjugate</font>`
 
 
 
@@ -453,6 +497,7 @@
   - $(kA)^H=\overline{k}(A^H)$
     >$k\in C$ （复数）
   - $(ABC)^H=C^HB^HA^H$
+  - $\displaystyle (e^A)^H=e^{A^H}$
 ---
 ## <font color=blue>矩阵的模/范数</font>
 
@@ -467,16 +512,30 @@
 - $|| X||=\sqrt{(X,X)}=\sqrt{\left|x_1\right|^2+\left|x_2\right|^2+\cdots+\left|x_n\right|^2}\geq0$
 - <font color=green>性质</font>
   >$∀x,y∈V$ 和 $k∈F$
-  - - ![](https://api2.mubu.com/v3/document_image/21954114_87832f43-354c-4aef-d98c-472cddd2fdf0.png)
-    - ![](https://api2.mubu.com/v3/document_image/21954114_5d8b4113-7b63-4f91-8308-063542f33ccf.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_87832f43-354c-4aef-d98c-472cddd2fdf0.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_5d8b4113-7b63-4f91-8308-063542f33ccf.png)
 ---
 ## <font color=blue>迹</font>
 
 
 
-### $tr(A)=a_{11}+\ldots+a_{nn}$
+>[参考来源](https://www.cnblogs.com/Lxk0825/p/13987066.html)
 
-
+- $tr(A)=a_{11}+\ldots+a_{nn}$
+- <mark>tips</mark>
+  - $\rm tr(ABC)=tr(BCA)=tr(CAB)$
+    - proof
+      ![](https://api2.mubu.com/v3/document_image/21954114_60e035d7-ac91-4833-c101-bf4987cd5a18.png)
+  - $\rm tr(kA)=k\cdot tr(A)$
+  - $\rm tr(A+B)=tr(A)+tr(B)$
+  - $\displaystyle \frac {\partial tr(AB)}{\partial A}=\frac {\partial tr(BA)}{\partial A}=B^T$
+    >矩阵乘积的迹关于第一个矩阵的梯度等于第二个矩阵的转置
+    - proof
+      ![](https://api2.mubu.com/v3/document_image/21954114_02f8cb8d-dfa1-4765-edda-6a74e4965e86.png)
+  - $\displaystyle \frac {\partial tr(A^TB)}{\partial A}=\frac {\partial tr(BA^T)}{\partial A}=B$
+  - $\rm tr(A) =\sum_i\lambda_i$
+    >矩阵的迹为所有特征值之和
+  - $\rm tr(A)=tr(A^T)$
 ### <mark>模平方公式</mark>
 
 
@@ -492,8 +551,8 @@
     - $tr(AB^T)=tr(B^TA)=\sum a_{i,j}b_{i,j}$
     - $\mathrm{tr}(XY^{H})=\mathrm{tr}(Y^{H}X)=Y^{H}X=x_{1}\overline{y}_{1}+\cdots+x_{n}\overline{y}_{n}$
       >$\mathrm{~for~}X,Y\in\mathbb{C}^{\mathrm{n}}$
-      - - ![](https://api2.mubu.com/v3/document_image/6cdb49a6-ac88-4312-9e5e-8107fbe14821-21954114.jpg)
-      - - ![](https://api2.mubu.com/v3/document_image/ab05e461-6d2a-4a0e-84c4-f35e5a0c8cbc-21954114.jpg)
+      - ![](https://api2.mubu.com/v3/document_image/6cdb49a6-ac88-4312-9e5e-8107fbe14821-21954114.jpg)
+      - ![](https://api2.mubu.com/v3/document_image/ab05e461-6d2a-4a0e-84c4-f35e5a0c8cbc-21954114.jpg)
 ---
 ## <font color=blue>全体特征根</font>
 
@@ -511,7 +570,7 @@
   - 则矩阵多项式<mark>$φ(A)$</mark>的n个特征值为<mark>$φ(λ_1),⋯,φ(λ_n)$</mark>
 - [矩阵分析：特征值，相似度对角化，Jordan标准形_jordan标准型和特征值的关系-CSDN博客](https://blog.csdn.net/qq_42192693/article/details/122248940)
 - <strong>补充性质</strong>
-  - - ![](https://api2.mubu.com/v3/document_image/21954114_f16570a3-28c9-40a2-e7e3-984f38e875fd.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_f16570a3-28c9-40a2-e7e3-984f38e875fd.png)
 ### <font color=green>特征子空间</font>
 
 
@@ -519,14 +578,14 @@
 - 设$\lambda$是矩阵$A\in \Bbb C^{n\times n}$的一个特征值
 - <font color=red>$E(\lambda )=\{x∈\Bbb C^n|Ax=\lambda x\}$</font>
 - $E(\lambda )$是$\Bbb C^n$的<strong>线性子空间</strong>，称为<strong>属于特征值</strong><strong>$\lambda$</strong>的<mark>特征子空间</mark>
-- <font color=red>$\rm dim(E(λ))$</font>为特征值$\lambda$的<mark>几何重数</mark>
-  - 类型对比 <mark>代数重数</mark>
-    - 矩阵$A$的特征值$λ_i$作为特征方程根的重数，称为特征值$\lambda_i$的<strong>代数重数</strong>
-    - <font color=red>$\rm n−rank(\lambda_i I−A)$</font>
-  - !!! 几何重数$\leq$代数重数
+- <font color=red>$\rm dim E(λ_i)=n−rank(\lambda_i I−A)$</font>为特征值$\lambda_i$的<mark>几何重数</mark>
+  - <mark>代数重数</mark>
+  - 矩阵$A$的特征值$λ_i$作为特征方程根的重数，称为特征值$\lambda_i$的<strong>代数重数</strong>
+  - `!!!` 几何重数$\leq$代数重数
     - 复方阵某一特征值的代数重数为1，则它的几何重数必为1
     - 示例
-      - ![](https://api2.mubu.com/v3/document_image/21954114_6a0c897e-c82b-412b-a7b4-3abb0e67f9b2.png)
+      ![](https://api2.mubu.com/v3/document_image/21954114_6a0c897e-c82b-412b-a7b4-3abb0e67f9b2.png)
+- $\rm dim(E(\lambda))\ge1$
 ---
 ## <font color=blue>右逆、左逆</font>
 
@@ -537,7 +596,7 @@
 - A有<strong>左逆</strong> 的充要条件（即存在矩阵B使得$BA= I$）
   - A为<strong>列满秩</strong>矩阵
 ---
-## <font color=blue>内积</font><font color=codespan>Inner product</font>
+## <font color=blue>内积</font>`<font color=codespan>Inner product</font>`
 
 
 
@@ -572,7 +631,7 @@
 
 
 - <mark>定义</mark>
-  - $\begin{aligned}(A,B)&\triangleq tr(B^HA)=tr(A^HB)=\sum a_{ij}\overline{b_{ij}} ,A,B\in C^{m,n}\\(A,A)&\triangleq tr(A^HA)=tr(AA^H)=\sum a_{ij}\overline{a_{ij}} =\sum|a_{ij} |^2\end{aligned}$
+  - $\begin{aligned}(A,B)&\triangleq tr(B^HA)=tr(AB^H)=\sum a_{ij}\overline{b_{ij}} ,A,B\in C^{m,n}\\(A,A)&\triangleq tr(A^HA)=tr(AA^H)=\sum a_{ij}\overline{a_{ij}} =\sum|a_{ij} |^2\end{aligned}$
 - <mark>特性</mark>
   - $(A,A)=tr(AA^H)=\sum\Bigl|a_{ij}\Bigr|^2\geq0$
   - $(B,A)=\overline{(A,B)}$
@@ -587,7 +646,7 @@
   - $\begin{aligned}A^{H}& =\begin{pmatrix}\overline{a_{11}}&&\cdots&&\overline{a_{n1}}\\\vdots&&\ddots&&\vdots\\\overline{a_{1p}}&&\cdots&&\overline{a_{np}}\end{pmatrix} \in C^{p\times n} \\&=\begin{pmatrix}\overline{\alpha_1}^T\\\vdots\\\overline{\alpha_p}^T\end{pmatrix}\text{,其中}\overline{\alpha_1}^T\text{是}n\text{维行向量}1\times n\text{阶矩阵}\end{aligned}$
   - $\begin{aligned}A^{H}A& =\begin{pmatrix}\overline{\alpha_1}^T\\\vdots\\\overline{\alpha_p}^T\end{pmatrix}(\alpha_1,\cdots,\alpha_p) \\&=\begin{pmatrix}\overline{\alpha_1}^T\alpha_1&&\overline{\alpha_1}^T\alpha_2&&\cdots&\overline{\alpha_1}^T\alpha_p\\\overline{\alpha_2}^T\alpha_1&&\overline{\alpha_2}^T\alpha_2&&\cdots&\overline{\alpha_2}^T\alpha_p\\\vdots&&\vdots&&\ddots&\vdots\\\overline{\alpha_p}^T\alpha_1&&\overline{\alpha_p}^T\alpha_2&&\cdots&\overline{\alpha_p}^T\alpha_p\end{pmatrix} \\&=\begin{pmatrix}(\alpha_1,\alpha_1)&&(\alpha_2,\alpha_1)&&\cdots&&(\alpha_p,\alpha_1)\\(\alpha_1,\alpha_2)&&(\alpha_2,\alpha_2)&&\cdots&&(\alpha_p,\alpha_2)\\\vdots&&\vdots&&\ddots&&\vdots\\(\alpha_1,\alpha_p)&&(\alpha_2,\alpha_p)&&\cdots&&(\alpha_p,\alpha_p)\end{pmatrix} \\&=\begin{pmatrix}\overline{(\alpha_1,\alpha_1)}&&\overline{(\alpha_1,\alpha_2)}&&\cdots&&\overline{(\alpha_1,\alpha_p)}\\\overline{(\alpha_2,\alpha_1)}&&\overline{(\alpha_2,\alpha_2)}&&\cdots&&\overline{(\alpha_2,\alpha_p)}\\\vdots&&\vdots&&\ddots&&\vdots\\\overline{(\alpha_p,\alpha_1)}&&\frac{\vdots}{(\alpha_p,\alpha_2)}&&\cdots&&\overline{(\alpha_p,\alpha_p)}\end{pmatrix} \\&==\begin{pmatrix}|\alpha_1|^2&\overline{(\alpha_1,\alpha_2)}&\cdots&\overline{(\alpha_1,\alpha_p)}\\\overline{(\alpha_2,\alpha_1)}&|\alpha_2|^2&\cdots&\overline{(\alpha_2,\alpha_p)}\\\vdots&\vdots&\ddots&\vdots\\\overline{(\alpha_p,\alpha_1)}&\overline{(\alpha_p,\alpha_2)}&\cdots&|\alpha_\text{p}|^2\end{pmatrix}\end{aligned}$
 ---
-## <font color=blue>正交</font><font color=codespan>orthogonal</font>
+## <font color=blue>正交</font>`<font color=codespan>orthogonal</font>`
 
 
 
@@ -617,10 +676,10 @@
 - <strong>正交向量组</strong>要求向量均为<u>非零向量</u>
 - <strong>正交向量组</strong><u>线性无关</u>
 - 向量 $X$ 与 $Y$ 正交<strong>当且仅当</strong> <font color=red>$‖X+Y‖^2=‖X‖^2+‖Y‖^2$</font>
-  >勾股定理
+  >`勾股定理`
 - 在 $n$ 维内积空间中，正交向量组中的向量个数不会超过n个
 - 拓展
-  - ![](https://api2.mubu.com/v3/document_image/21954114_72b9b71b-8d0a-40b5-f894-754fbac171ba.png)
+  ![](https://api2.mubu.com/v3/document_image/21954114_72b9b71b-8d0a-40b5-f894-754fbac171ba.png)
 ---
 ## <font color=blue>矩阵合同</font>
 
@@ -640,7 +699,7 @@
 
 - <font color=green>定义</font>
 - <font color=green>tips</font>
-  - 两矩阵相似的<mark>充分必要条件</mark>是两矩阵的<strong>特征矩阵等价（or 相抵）</strong>
+  - 两矩阵相似的<mark>充分必要条件</mark>是两矩阵的<strong>特征矩阵相抵</strong>
 ---
 ## <font color=blue>矩阵的秩</font>
 
@@ -648,9 +707,13 @@
 
 - 矩阵秩越乘越小：<font color=red>$r(AB)<\rm min\{r(A),r(B)\}$</font>
 - $\rm r(A)=r(AB)$ 成立的充要条件是存在适当阶数的矩阵$C$使得$ABC=A$
+- 一般的，若$\rm (A-xI)(A-yI)=0$，则 $A$ 可以对角化
+  - 例子 proof
+    ![](https://api2.mubu.com/v3/document_image/21954114_fe70814f-609b-4103-c61c-2bf8c4fbe7d9.png)
+- 对于任意 $n$ 阶矩阵 $A$，<font color=red>$\rm rank(A^n)=rank(A^{n+1})$</font>
 - <strong>补充性质</strong>
   - 一些结论
-    - ![](https://api2.mubu.com/v3/document_image/21954114_122e0801-1bfd-4fec-fa55-a0600b62c588.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_122e0801-1bfd-4fec-fa55-a0600b62c588.png)
 ---
 ## <font color=blue>零化多项式</font>
 
@@ -696,38 +759,41 @@
 - 矩阵A的最小多项式$m_A(λ)$是唯一的，且可整除矩阵A的任一零化多项式
   - 特别的 $m_A(λ) | f_A(λ)$
 - 矩阵A的特征多项式$f_A(λ)$与最小多项式$m_A(λ)$具有<strong>相同的根（不计重数）</strong>
+  - 矩阵A的最小多项式$m_A(λ)$必为特征多项式$f_A(λ)$的因式
+  - 例子
+    ![](https://api2.mubu.com/v3/document_image/21954114_ab164e7d-dcb5-4e3b-94aa-6434bd311229.png)
+### <font color=green>求法</font>
+
+
+
+- 利用Smith标准型求
+- 利用特征多项式与定义求
+- 利用Jordan标准型求
 ---
-## <font color=blue>Jordan块</font>参考
+## <font color=blue>Jordan块</font>
 
 
+
+>[参考](https://blog.csdn.net/qq_42192693/article/details/122248940)
 
 ### <font color=green>定义</font>
 
 
 
 - <font color=red>Jordan块</font>
-  - ![](https://api2.mubu.com/v3/document_image/21954114_71a38d43-d51a-43e9-b870-650953477a34.png)
+  ![](https://api2.mubu.com/v3/document_image/21954114_71a38d43-d51a-43e9-b870-650953477a34.png)
 - <font color=red>Jordan标准形</font>
-  - ![](https://api2.mubu.com/v3/document_image/21954114_770ec21a-bc46-4c60-aa91-daba49d16d5c.png)
+  ![](https://api2.mubu.com/v3/document_image/21954114_770ec21a-bc46-4c60-aa91-daba49d16d5c.png)
   - <font color=tag>例子</font>
-    - ![](https://api2.mubu.com/v3/document_image/21954114_e0f1b31d-fcec-46f7-bfdc-d1525a081411.png)
-### <font color=green>定理</font>
-
-
-
-- <mark>Jordan标准形定理</mark>
+    ![](https://api2.mubu.com/v3/document_image/21954114_e0f1b31d-fcec-46f7-bfdc-d1525a081411.png)
+- <font color=green>Jordan标准形定理</font>
   - 设矩阵$J$是复方阵$A$的Jordan标准形，则矩阵$A$与矩阵$J$<strong>相似</strong>
   - <font color=tag>例子</font>
     - 题目
-      - ![](https://api2.mubu.com/v3/document_image/21954114_09e2cb3a-b0ca-4eda-e41b-f3e5c96b485b.png)
+      ![](https://api2.mubu.com/v3/document_image/21954114_09e2cb3a-b0ca-4eda-e41b-f3e5c96b485b.png)
     - 解答
-      - ![](https://api2.mubu.com/v3/document_image/21954114_8154d4a6-5795-41f8-c441-792d34176ed9.png)
-      - ![](https://api2.mubu.com/v3/document_image/21954114_fcb1c144-4dc1-476a-9449-31427ed9c85a.png)
-- <font color=codespan>Frobenious</font><mark>定理</mark>
-  - 设 $A∈ℂ^{n×n}$
-  - 其特征矩阵 $λI−A$ 的Smith标准形为 <font color=red>$\rm diag(d_1(λ),…,d_n(λ))$</font>
-  - 则 $A$ 的<strong>最小多项式</strong><font color=red>$m_A(λ)=d_n(λ)$</font>
-  - <mark>注</mark>：$\lambda I−A$的<strong>初等因子的最小公倍式</strong>即为矩阵$A$的最小多项式$m_A(\lambda)$
+      ![](https://api2.mubu.com/v3/document_image/21954114_8154d4a6-5795-41f8-c441-792d34176ed9.png)
+      ![](https://api2.mubu.com/v3/document_image/21954114_fcb1c144-4dc1-476a-9449-31427ed9c85a.png)
 ### <font color=green>性质</font>
 
 
@@ -737,6 +803,49 @@
 - Jordan块本身就是一个Jordan矩阵
 - <strong>对角阵</strong>是一个Jordan矩阵，它的每个Jordan块都是一阶的 $\Leftrightarrow$ A 的初等因子都是一次的
 - Jordan标准型中，<strong>不同Jordan块的对角线元素可能相同</strong>，故特征值$\lambda_i$的代数重数 $\ge$ $\lambda_i$ 对应的某个Jordan块的阶数
+- 矩阵不一定可以相似对角化，但一定可以与Jordan矩阵相似
+### <font color=green>Jordan标准型求法</font>
+
+
+
+- <mark>① 特征向量法</mark>
+  - 如果 $\lambda_i$ 是 $A$ 的单重特征值，则 $\lambda_i$ 对应一阶Jordan块$\rm J_1(\lambda_i)$
+  - 如果 $\lambda_i$ 是 $A$ 的 $r_i$ 重特征值（<mark>代数重数</mark>），设 $\rm s_i=dim(E_{\lambda_i})$
+    >$E $ 指<font color=green>特征子空间</font>，$\rm dimE_{\lambda_i} = n-rank(A-\lambda_iI)$等于$\lambda_i$ 的几何重数
+    - 则<strong>对应</strong> <strong>$\lambda_i$</strong> <strong>有</strong> <strong><font color=bold>$\rm s_i$</font></strong> <strong><font color=bold>个</font></strong> <strong>$\lambda_i$</strong><strong>为对角元的</strong><strong><font color=bold>Jordan块</font></strong>
+    - 且这些Jordan块的<font color=red>阶数之和等于 </font><font color=red>$r_i$</font>
+  - 由$A$的所有相异特征值对应的Jordan块构成的Jordan矩阵即为$A$的Jordan标准型
+  - <font color=tag>例子</font>
+    - ![](https://api2.mubu.com/v3/document_image/21954114_47761a55-261c-4628-8043-2c2ec61c0c4e.png)
+- <mark>② 初等变换法</mark>
+  - 方法一
+    - 通过对$\lambda I-A$进行<strong>$\lambda$</strong><strong>矩阵的初等变换</strong>得到Smith标准型
+    - 从而得到<strong>不变因子</strong>$\Rightarrow$<strong>初等因子</strong>$\Rightarrow$<strong>Jordan块</strong>
+  - 方法二
+    - 将$\lambda I-A$进行初等变换变成对角块矩阵
+    - 直接得到初等因子，从而得到Jordan块
+- <mark>③行列式因子法</mark>
+  - 通过定义求$\lambda I-A$的<strong>行列式因子</strong>
+  - 从而得到$\Rightarrow$<strong>不变因子</strong>$\Rightarrow$<strong>初等因子</strong>$\Rightarrow$<strong>Jordan块</strong>
+### <font color=green>Jordan分解方法</font>
+
+
+
+- <font color=tag>例子</font>
+  - ![](https://api2.mubu.com/v3/document_image/21954114_4fb3176b-8604-413e-dc63-58ec1f4413b9.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_226a9773-1d98-4457-f479-19c72c690afc.png)
+### <font color=green>Jordan标准型的幂</font>
+
+
+
+- ![](https://api2.mubu.com/v3/document_image/21954114_b2d61761-a7f1-494d-b957-c86c75fa7307.png)
+- ![](https://api2.mubu.com/v3/document_image/21954114_a1fd0cb4-eede-4fde-c0ce-76fedaf53c88.png)
+- ![](https://api2.mubu.com/v3/document_image/21954114_702bd1f4-d182-40ca-f2b0-6c11a7a561bc.png)
+### <font color=green>Jordan标准型求矩阵函数</font>
+
+
+
+- $f(A) = P f(J)P^{-1}$
 ### <font color=green>tips</font>
 
 
@@ -751,7 +860,9 @@
   - 一般的Jordan标准型 $J$
     - J 的<strong>最小多项式</strong>等于特征矩阵 $\rm \lambda I-A$ 的初等因子的最小公倍数，恰为<strong>不变因子</strong>$\rm d_n(\lambda)$
   - <font color=tag>例子</font>
-    - - ![](https://api2.mubu.com/v3/document_image/21954114_5993e512-568e-4676-8f9e-f6309370d450.png)
+    - ![](https://api2.mubu.com/v3/document_image/21954114_5993e512-568e-4676-8f9e-f6309370d450.png)
+- 引理
+  ![](https://api2.mubu.com/v3/document_image/21954114_796271b3-62fe-497d-ebf3-056df1705923.png)
 ---
 ## <font color=blue>映射、变换</font>
 
@@ -788,8 +899,8 @@
 
 - <strong>定义</strong>
   - 设 $V$ 和 $W$ 是数域 $F$ 上的线性空间，如果映射 <font color=red>$T:V→W$</font>满足下述性质，称 $T$ 为 $V$ 到 $W$ 的一个<strong>线性映射</strong>
-    - <mark>可加性</mark>：$∀x,y∈V，T(x+y)=T(x)+T(y)$
-    - <mark>齐次性</mark>：$∀λ∈F，T(λx)=λT(x)$
+    - <mark>可加性</mark>：$∀x,y∈V$ ，<font color=red>$T(x+y)=T(x)+T(y)$</font>
+    - <mark>齐次性</mark>：$∀λ∈F$，<font color=red>$T(λx)=λT(x)$</font>
   - 特别的，当 $V=W$ 时， 称 $T$ 为 $V$ 上的<strong><u>线性变换</u></strong>
     - <strong>特殊的线性变换1</strong>
       >定义映射 $T:V→V$
@@ -804,13 +915,6 @@
       - <font color=red>反射</font>：$T(x)=(x_1,−x_2)$
       - <font color=red>旋转</font>：$T(x) = \bigg[ \begin{matrix} cos\varphi & -sin\varphi \\sin\varphi & cos\varphi \end{matrix}\bigg]x$
         >$\varphi$ 为旋转角
-- <strong>正交投影变换</strong>
-  - 设 $W$ 是线性空间 $V$ 的<u>非平凡子空间</u>，定义 $V$ 上的<font color=red>正交投影变换</font>映射 $T$为
-    >平凡子空间指零向量和自身
-  - <font color=red>$T(x)=\mathrm{Proj_W}x$</font>
-    > $∀x∈V$
-  - 若$\alpha_1,\cdots,\alpha_p$ 为 $W$ 的<strong>标准正交基</strong>
-    - $T(x)=\mathrm{Proj_W}x\\=(x,\alpha_1)\alpha_1+(x,\alpha_2)\alpha_2+\cdots+(x,\alpha_p)\alpha_p$
 - <strong>关于线性映射的tips</strong>
   - <mark>定理 </mark>设$T$是数域 $F$上线性空间 $V$ 到 $W$的线性映射，若$α_1,⋯,α_p$是 $V$ 的一组向量，$k_1,\cdots,k_p \in F$
     - $T(k_1α_1+⋯+k_pα_p)=k_1T(α_1)+⋯+k_pT(α_p)$
@@ -825,6 +929,10 @@
     - 当且仅当 $T$ 是<strong>单射</strong>时，$V$中<strong>一组基</strong>的<strong><u>像</u></strong>是 $W$ 中<strong>一组基</strong>。
       >此时映射 $T$ 是双射
   - 线性映射不一定将一组基映射为像空间的一组基
+- <strong>关于线性变换的tips</strong>
+  >设 $T$ 是线性空间 $V$ 的线性变换
+  - 若 $T$ 可逆，则逆变换是线性变换
+  - 若 $T$ 在欧式空间$V$ 的一组标准正交基 $x_1,\cdots,x_n$ 的矩阵是对称阵，则 $(T(x_i),x_j)=(x_i,T(x_j))$
 - <strong>线性映射运算</strong>
   - 线性映射的<strong>加法</strong>运算
     - 设 $T_1, T_2\in \mathcal L(V,W)$，定义 $T_1$ 与 $T_2$ 的<mark>和</mark>为$\\$ <font color=red>$(T_1+T_2)(x)=T_1(x)+T_2(x)$</font>，$\forall x∈V$
@@ -832,6 +940,7 @@
     - 设$T\in \mathcal L(V,W)，\lambda \in F$， 定义 $λ$ 与 $T$ 的<mark>数乘</mark>为$\\$ <font color=red>$(\lambda T)( x)=\lambda\cdot T( x)$</font>，$\forall x∈V$
 - <strong>线性映射空间、线性变换空间</strong>
   - 集合 $\mathcal L(V,W)$ 中赋以加法和数乘构成数域$F$上的线性空间，称为<font color=red>线性映射空间</font>
+    - $\mathcal{L}(V,W)$表示线性空间V到W的所有线性映射的集合
   - 特别地，$\mathcal L(V)$称为<font color=red>线性变换空间</font>
   - <strong>注意</strong>：<font color=red>$\rm dim(\mathcal L(V,W)) = \rm dim(V) \times \rm dim(W)$</font>
 - 线性映射<strong>值空间</strong>和<strong>核空间</strong>
@@ -850,6 +959,13 @@
       - $\rm dimN(T)= dimN(A)$
       - $\rm dimR(T)=dimR(A)=rank(A)$
       - $\rm dimN(A)+dimR(A)=n$
+- <strong>正交投影变换</strong>
+  - 设 $W$ 是线性空间 $V$ 的<u>非平凡子空间</u>，定义 $V$ 上的<font color=red>正交投影变换</font>映射 $T$为
+    >平凡子空间指零向量和自身
+  - <font color=red>$T(x)=\mathrm{Proj_W}x$</font>
+    > $∀x∈V$
+  - 若$\alpha_1,\cdots,\alpha_p$ 为 $W$ 的<strong>标准正交基</strong>
+    - $T(x)=\mathrm{Proj_W}x\\=(x,\alpha_1)\alpha_1+(x,\alpha_2)\alpha_2+\cdots+(x,\alpha_p)\alpha_p$
 - <font color=blue>亏加秩定理</font>
 ### <font color=green>正交变换、酉变换</font>
 
@@ -860,16 +976,18 @@
   - $(T(x),T(y))=(x,y)，∀x,y∈V$
   - 称 $T$ 为<font color=red>正交</font>（<font color=purple>酉</font>）变换
 - <strong>判定（充要条件）</strong>
-  >设V是n维欧氏（酉）空间，T∈L(V)
+  >设$V$是$n$维欧氏（酉）空间，$T∈\mathcal L(V)$
   - $T$保持长度不变，即 $\|T(x)\|=\|x\|$
   - 若 $ξ_1,⋯,ξ_n$ 是$V$ 中一组<strong>标准正交基</strong>，$\\$ 则$T(ξ_1),⋯,T(ξ_n)$ 也是$V$ 中一组<strong>标准正交基</strong>
   - $T$在$V$的任一标准正交基下的矩阵为正交（酉）矩阵
+- <strong>性质</strong>
+  - 正交变换保持两个向量的夹角不变
 ### <font color=green>同构映射</font>
 
 
 
 - <strong>定义</strong>
-  >其实就是线性映射+双射
+  >其实就是`线性映射+双射`
   - 设$V$和$W$是数域$F$上的线性空间，$\forall x,y\in V$， $\forall λ\in F$
   - 存在<strong>双射</strong> $f:V→W$满足
     - （1）<font color=red>$f(x+y)=f(x)+f(y)$</font>
@@ -892,12 +1010,11 @@
 
 
 - <strong>矩阵</strong>
-  - 定义
-    - ![](https://api2.mubu.com/v3/document_image/21954114_3591cd2b-e7c3-4b25-80e0-4e66b84753c3.png)
-    - ![](https://api2.mubu.com/v3/document_image/21954114_6291d483-0929-4aaf-c35f-92232b0a6414.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_3591cd2b-e7c3-4b25-80e0-4e66b84753c3.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_7b6bc06b-6b09-40ec-ceed-ce0d6dbf7e92.png)
 - <strong>线性映射与矩阵的关系</strong>
   - 示例
-    - ![](https://api2.mubu.com/v3/document_image/21954114_9f4c5a13-8b69-4a51-edb7-51feb60c0ee8.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_9f4c5a13-8b69-4a51-edb7-51feb60c0ee8.png)
 - <strong>通过矩阵乘法实现线性映射</strong>
   - 设 $T\in \mathcal L(V,W)$，$T$在$V$的基$ε_1,⋯,ε_n$和$W$的基$η_1,⋯,η_m$下的矩阵为$A$。
     - $\Rightarrow$ <font color=red>$T(ε_1,⋯,ε_n)\\ \triangleq[T(ε_1),⋯,T(ε_n)]\\=[η_1,⋯,η_m]A$</font>
@@ -908,8 +1025,8 @@
 - <strong>tips</strong>
   - 线性映射在不同基下的矩阵是相抵的
   - 推论
-    - 相似矩阵反映的是同一个线性变换
-      - ![](https://api2.mubu.com/v3/document_image/21954114_bddb8abe-74ab-4ef1-d773-55e824490e76.png)
+    - <font color=red>相似矩阵反映的是同一个线性变换</font>
+      ![](https://api2.mubu.com/v3/document_image/21954114_bddb8abe-74ab-4ef1-d773-55e824490e76.png)
 
 # <font color=purple>重要公式、定理</font>
 
@@ -928,12 +1045,13 @@
     - $U$——U阵
 - <mark>实方阵Schur引理</mark>
   - 设$A∈ℝ^{n×n}$的特征值均为实数，则存在<strong>正交矩阵</strong> $Q$ 使得
-    - ![](https://api2.mubu.com/v3/document_image/21954114_7d62bc79-7b96-4cb1-f3ec-3ee780008f1f.png)
+    ![](https://api2.mubu.com/v3/document_image/21954114_7d62bc79-7b96-4cb1-f3ec-3ee780008f1f.png)
 - <mark>tips</mark>
   - Schur引理表明任意复方阵都相似于<strong>上三角阵</strong>，但并不是所有复方阵都相似于对角阵
   - 可<mark>酉相似对角化</mark>的矩阵
     - 正规阵
       - Hermite阵、反Hermite阵、正交阵、酉矩阵等都是正规阵
+    - Householder矩阵
   - 求Hermite矩阵$A$酉相似于对角阵的步骤
     - 求出A的全部相异特征值及重数
     - 对于每个特征值 $λ$，求方程$(λI−A)x=0$的一个基础解系，并将其单位正交化处理
@@ -943,10 +1061,10 @@
 
 
 
-- - ![](https://api2.mubu.com/v3/document_image/29f02167-2ac4-488f-bc58-bf085981538f.jpeg)
-- - ![](https://api2.mubu.com/v3/document_image/21954114_d1ff572c-9ade-486a-8551-8aaa1a03f551.png)
-- - ![](https://api2.mubu.com/v3/document_image/21954114_e7f5d0c0-6162-4fd5-9188-f6c2aa5ceb93.png)
-- - ![](https://api2.mubu.com/v3/document_image/21954114_bbb0e451-0403-49ee-a86d-885499c2a268.png)
+- ![](https://api2.mubu.com/v3/document_image/29f02167-2ac4-488f-bc58-bf085981538f.jpeg)
+- ![](https://api2.mubu.com/v3/document_image/21954114_d1ff572c-9ade-486a-8551-8aaa1a03f551.png)
+- ![](https://api2.mubu.com/v3/document_image/21954114_e7f5d0c0-6162-4fd5-9188-f6c2aa5ceb93.png)
+- ![](https://api2.mubu.com/v3/document_image/21954114_bbb0e451-0403-49ee-a86d-885499c2a268.png)
 ---
 ## <font color=blue>特商公式</font>
 
@@ -973,11 +1091,11 @@
 
 
 
-- 设 $T∈L(V,W)$
+- 设T为数域F上的线性空间V到W的一个线性变换，即$T \in \mathcal{L}(V,W)$
 - <font color=red>$\rm dimN(T)+dimR(T)=dimV$</font>
 - 即线性映射 $T$ 的亏加秩等于其定义域 $V$ 空间的维数
 ---
-## <font color=codespan>Cayley</font><font color=blue>定理</font>
+## `<font color=codespan>Cayley</font>`<font color=blue>定理</font>
 
 
 
@@ -985,9 +1103,9 @@
 - 由该定理得到的有趣性质
   - 若$A\in C^{n\times n}$，则$A^n$一定可以由$A^{n-1},\cdots,A,I$线性表示，其中$n\geqslant2。$
 - 例题
-  - - ![](https://api2.mubu.com/v3/document_image/21954114_6a512604-ef08-41ef-abb6-e741a72e2681.png)
+  - ![](https://api2.mubu.com/v3/document_image/21954114_6a512604-ef08-41ef-abb6-e741a72e2681.png)
 ---
-## <font color=codespan>Cauchy—Schwarz</font><font color=blue>不等式</font>
+## `<font color=codespan>Cauchy—Schwarz</font>`<font color=blue>不等式</font>
 
 
 
@@ -995,12 +1113,15 @@
   - 设$V$是数域$F$上的<strong>内积空间</strong>，对 $\forall x, y∈V$，有 <font color=red>$|(x,y)|≤‖x‖‖y‖$</font>
     - 注意：一般的线性空间不一定成立
   - 其中<strong>等号成立</strong>当仅当 <font color=red>$x, y$</font><font color=red>线性相关</font>
+- <font color=green>三角不等式</font>
+  - 设 $V$ 为欧式空间，则对任意的 $\alpha,\beta\in V$，有
+  - $|\alpha+\beta|\le |\alpha|+|\beta|$
 - <font color=green>拓展</font>
   >定义不同内积可得到不同的Cauchy不等式
   - 对 $ℝ^n$ 中任两向量 <mark>$x=[x_1,⋯,x_n]^T$</mark>和 <mark>$y=[y_1,⋯,y_n]^T$</mark>
     - $\displaystyle \left|\sum_{i=1}^nx_iy_i\right|\leq\sqrt{\sum_{i=1}^nx_i^2}\sqrt{\sum_{i=1}^ny_i^2}$
 ---
-## <font color=codespan>Holder</font><font color=blue>不等式</font>
+## `<font color=codespan>Holder</font>`<font color=blue>不等式</font>
 
 
 
@@ -1008,7 +1129,7 @@
 - 设 <mark>$p,q>1$</mark>，且<mark>$\displaystyle \frac1p + \frac1q=1$</mark>
 - <font color=red>$\displaystyle \sum_{i=1}^n|x_iy_i|\le \bigg(\sum_{i=1}^n |x_i|^p\bigg)^{\frac1p}\bigg(\sum_{i=1}^n |y_i|^q\bigg)^{\frac1q}$</font>
 ---
-## <font color=codespan>Minkowski</font><font color=blue>不等式</font>
+## `<font color=codespan>Minkowski</font>`<font color=blue>不等式</font>
 
 
 
